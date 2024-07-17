@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+ 
+.outfit{
+  font-family: "Outfit", sans-serif;
+
+}
+  .nav-main {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 2rem;
+    background-color: black;
+    color: white;
+  }
+  
+  .nav-list {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-item {
+    position: relative;
+  }
+  
+  .main>a {
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 30px 4px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+  }
+  
+  .main>a:hover {
+    color: #F20C1F;
+  }
+  .submenu li{
+    font-size: 17px;
+border-bottom: 2px solid #f3f4f6;
+  }
+
+  .submenu ul{
+    overflow-x:hidden;
+  }
+  .submenu ul::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .submenu, .submenu-nested {
+    position: absolute;
+    left: -50px;
+    top: 160%;     
+opacity: 1!important; z-index: 10;
+    width: 320px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+
+  
+  .submenu-nested {
+    left: 100%;
+    top: 0;max-height: 420px;
+
+  }
+  
+  .submenu a, .submenu-nested a {
+    display: block;
+    padding: 10px;
+    color: rgb(59, 59, 59);
+    /* border-left: 5px solid white; */
+
+  }
+  
+  .submenu a:hover, .submenu-nested a:hover {
+    background-color: #f3f4f6;
+    border-left: 5px solid #F20C1F;
+  }
+  
+  .contact-btn {
+    background-color:white  ;
+    color: #F20C1F;
+    padding: 0.5rem ;
+    border-radius: 60px;
+    font-weight:600;
+    transition: background-color 0.3s;
+    i{
+      transition: ease-in-out 0.3s;
+    }
+  }
+ 
+  .contact-btn:hover {
+    background-color: black;
+    color: white;
+i{
+  transform:scaleX(-1);
+}
+  }
+  
+  .submenu-enter {
+    transition: opacity 0.4s ease-out;
+  }
+  .submenu-leave{
+    transition: all 0.1s ease-out;
+  }
+  .submenu-enter {
+    opacity: 1;
+    max-height: 0;
+    overflow: hidden;
+    animation: slide2 0.9s ease-in-out;
+  }
+  
+  .submenu-enter-active {
+    /* animation: slide 4s ease-in-out ; */
+  }
+  
+  /* @keyframes slide {
+    0%   { max-height: 0px; }
+   
+    100% { max-height: 400px; }
+  } */
+  @keyframes slide2 {
+    0%   { max-height: 0px; }
+   
+    100% { max-height: 500px; }
+  }
+  .submenu-leave {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .submenu-leave-active {
+    opacity: 0;
+    transform: translateY(-10px);
+  }

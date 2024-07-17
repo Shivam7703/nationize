@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/src/header.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://kit.fontawesome.com/4d509971f0.js" crossorigin="anonymous"></script>
+  <script src="tailwind.js"></script>
+  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="stylesheet" href="./src/index.css">
+</head>
+
+<body x-data>
+  <header class="flex flex-row">
+    <div class="bg-white p-4 flex justify-center items-center"><img src="Assets/logo1.png"
+        class="lg:w-[350px] h-auto md:w-[300px] w-[190px]" alt=""></div>
+    <div class="w-full max-sm:hidden">
+      <div class="flex justify-between bg-[#F20C1F] w-full p-4 px-11 text-white items-center">
+        <div class="flex gap-7 text-white text-xl"><a href=""><i
+              class="fa-brands hover:text-black transition-all fa-x-twitter"></i></a> <a href=""><i
+              class="fa-brands hover:text-black transition-all fa-facebook-f"></i></a><a href=""><i
+              class="fa-brands hover:text-black transition-all fa-instagram"></i></a>
+          <a href=""><i class="fa-brands hover:text-black transition-all fa-linkedin-in"></i></a>
+        </div>
+        <ul class="flex gap-7 !text-[16px] items-center">
+          <a href="construction.html">
+            <li class="hover:border-b transition-all border-white ">About Us</li>
+          </a><a href="construction.html">
+            <li class="hover:border-b transition-all border-white ">Our Services</li>
+          </a><a href="construction.html">
+            <li class="hover:border-b transition-all border-white ">News</li>
+          </a><a href="construction.html">
+            <li class="hover:border-b transition-all border-white ">Coaching</li>
+          </a><a href="construction.html">
+            <li class="hover:border-b transition-all border-white ">Blogs</li>
+          </a>
+          </a><a href="construction.html">
+            <li class="hover:border-b transition-all border-white ">Contact Us</li>
+          </a>
+          <a href="construction.html"><button class="contact-btn text-lg shadow pr-6 text-black flex items-center"> <i
+                class=" fa-solid fa-phone  mr-2 bg-[#F20C1F] rounded-full text-white p-3"></i>
+              <p class="leading-5 text-left text-[16px]">Call Anytime <br> +91000008998 </p>
+            </button></a>
+        </ul>
+      </div>
+      <nav class="nav-main">
+        <ul class="nav-list">
+          <li class="nav-item main" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+            <a href="construction.html" @click.prevent="open = !open">Canada </a>
+            <ul x-show="open" x-transition:enter="submenu-enter" x-transition:leave="submenu-leave" class="submenu">
+              <li><a href="construction.html">Canada Permanent Residency Visa</a></li>
+              <li><a href="construction.html">Canada Express Entry</a></li>
+              <li><a href="construction.html">Canada Family Sponsorship</a></li>
+
+              <!-- Add other submenu items here -->
+              <li class="nav-item" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+                <a href="construction.html" @click.prevent="open = !open">Provincial Nominee Program (PNP) <i
+                    class="fa-solid fa-angle-right float-right ml-3"></i></a>
+                <ul x-show="open" x-transition:enter="submenu-enter" x-transition:leave="submenu-leave"
+                  class="submenu-nested">
+                  <li><a href="construction.html">Manitoba PNP</a></li>
+                  <li><a href="construction.html">Yukon Nominee Program</a></li>
+                  <li><a href="construction.html">Ontario PNP Program</a></li>
+                  <li><a href="construction.html">Noca Scotia PNP</a></li>
+                  <li><a href="construction.html">Alberta PNP Program</a></li>
+                  <li><a href="construction.html">British Columbia PNP Program</a></li>
+                  <li><a href="construction.html">Quebec Skilled Worker Program</a></li>
+                  <li><a href="construction.html">Saskatchewan PNP</a></li>
+                  <li><a href="construction.html">New Brunswick PNP Program</a></li>
+                  <li><a href="construction.html">Atlantic Immigration Program</a></li>
+                  <li><a href="construction.html">PEI PNP Program</a></li>
+                  <li><a href="construction.html">NL PNP Program</a></li>
+                  <!-- Add other PNP submenu items here -->
+                </ul>
+              </li>
+              <li><a href="construction.html">Atlantic Immigration Pilot</a></li>
+              <li><a href="construction.html">Canada Business Visa</a></li>
+              <li><a href="construction.html">Self-employed Persons Program</a></li>
+              <li><a href="construction.html">Caregivers</a></li>
+              <li><a href="construction.html">Rural and Northern Immigration Pilot</a></li>
+              <li><a href="construction.html">Canada Agri-Food Pilot</a></li>
+              <li><a href="construction.html">Canada Refugees and Asylum</a></li>
+            </ul>
+          </li>
+
+
+          <!-- 2nd -->
+          <li class="nav-item main" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+            <a href="construction.html" @click.prevent="open = !open">Australia </a>
+            <ul x-show="open" x-transition:enter="submenu-enter" x-transition:leave="submenu-leave" class="submenu">
+              <li><a href="construction.html">Australia Permanent Residency Visa</a></li>
+              <li><a href="construction.html">Australia Skilled Migration</a></li>
+              <li><a href="construction.html">Australia Employer Sponsored Visas</a></li>
+              <li><a href="construction.html">Australia Family Visas</a></li>
+              <li><a href="construction.html">Australia Student Visas</a></li>
+              <li><a href="construction.html">Australia Subclass 482 Visa</a></li>
+            </ul>
+          </li>
+
+          <!-- 3rd -->
+          <li class="nav-item main" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+            <a href="construction.html" @click.prevent="open = !open">Germany </a>
+            <ul x-show="open" x-transition:enter="submenu-enter" x-transition:leave="submenu-leave" class="submenu">
+              <li><a href="construction.html">Job Seeker Visa</a></li>
+              <li><a href="construction.html">Tourist Visa</a></li>
+            </ul>
+          </li>
+
+          <!-- 4th -->
+          <li class="nav-item main" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+            <a href="construction.html" @click.prevent="open = !open">UK</a>
+            <ul x-show="open" x-transition:enter="submenu-enter" x-transition:leave="submenu-leave" class="submenu">
+              <li><a href="construction.html">Work Visa</a></li>
+              <li><a href="construction.html">Tourist Visa</a></li>
+            </ul>
+          </li>
+          <!-- 5th -->
+          <li class="nav-item main" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+            <a href="construction.html" @click.prevent="open = !open">Gulf Nations </a>
+            <ul x-show="open" x-transition:enter="submenu-enter" x-transition:leave="submenu-leave" class="submenu">
+              <li><a href="construction.html">Canada Permanent Residency Visa</a></li>
+              <li><a href="construction.html">Work Visa</a></li>
+              <li><a href="construction.html">Tourist Visa</a></li>
+
+            </ul>
+          </li>
+          <!-- 6th -->
+          <li class="nav-item main" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+            <a href="construction.html" @click.prevent="open = !open">Tourist Visa </a>
+            <ul x-show="open" x-transition:enter="submenu-enter" x-transition:leave="submenu-leave" class="submenu">
+              <li><a href="construction.html">Canada Tourist Visa</a></li>
+              <li><a href="construction.html">Australia Tourist Visa</a></li>
+              <li><a href="construction.html">USA Tourist Visa</a></li>
+              <li><a href="construction.html">UK Tourist Visa</a></li>
+              <li><a href="construction.html">Germany Tourist Visa</a></li>
+              <li><a href="construction.html">Dubai Tourist Visa</a></li>
+              <li><a href="construction.html">Italy Tourist Visa</a></li>
+              <li><a href="construction.html">Ireland Tourist Visa</a></li>
+            </ul>
+          </li>
+
+          <!-- 7th -->
+          <li class="nav-item main" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+            <a href="construction.html" @click.prevent="open = !open">Study Visa</a>
+            <ul x-show="open" x-transition:enter="submenu-enter" x-transition:leave="submenu-leave" class="submenu">
+              <li><a href="construction.html">Study In Canada</a></li>
+              <li><a href="construction.html">Study In Australia</a></li>
+              <li><a href="construction.html">Study In Germany</a></li>
+
+              <li><a href="construction.html">Study In Italy</a></li>
+              <li><a href="construction.html">Study In Singapore</a></li>
+              <li><a href="construction.html">Study In UK</a></li>
+              <li><a href="construction.html">Study In USA</a></li>
+              <li><a href="construction.html">Study In New Zealand</a></li>
+              <li><a href="construction.html">Study In Dubai</a></li>
+              <li><a href="construction.html">Study In Ireland</a></li>
+            </ul>
+          </li>
+
+          <!-- 8th -->
+          <li class="nav-item main" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+            <a href="construction.html" @click.prevent="open = !open">Work Permit Visa </a>
+            <ul x-show="open" x-transition:enter="submenu-enter" x-transition:leave="submenu-leave" class="submenu">
+              <li><a href="construction.html">Canada Work Visa</a></li>
+              <li><a href="construction.html">Australia Work Visa</a></li>
+              <li><a href="construction.html">Poland Work Visa</a></li>
+              <li><a href="construction.html">UK Work Visa</a></li>
+              <li><a href="construction.html">Portugal Work Visa</a></li>
+              <li><a href="construction.html">Germany Work Visa</a></li>
+              <li><a href="construction.html">Hong Kong Work Visa</a></li>
+              <li><a href="construction.html">Malta Work Visa</a></li>
+              <li><a href="construction.html">New Zealand Work Visa</a></li>
+              <li><a href="construction.html">Sweden Work Visa</a></li>
+              <li><a href="construction.html">Austria Work Visa</a></li>
+            </ul>
+          </li>
+
+          <!-- 9th -->
+          <li class="nav-item main" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+            <a href="construction.html" @click.prevent="open = !open">Permanent Residency Visa </a>
+            <ul x-show="open" x-transition:enter="submenu-enter" x-transition:leave="submenu-leave" class="submenu">
+              <li><a href="construction.html">Canada PR Visa</a></li>
+              <li><a href="construction.html">Australia PR Visa</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- main part -->
+  <main>
+    <!-- section1 -->
+    <section>
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper text-white">
+          <!-- Slides -->
+          <div class="swiper-slide w-full h-full flex items-center  max-sm:text-center lg:px-40"
+            style="background: linear-gradient(90deg, rgba(0, 0, 0, 0.902), rgba(255, 255, 255, 0)), url(Assets/banners/bg-3.jpg);">
+            <div class="p-16 border1 max-sm:!bg-none max-sm:p-10">
+              <h2 class="sm:text-3xl mb-10 text-2xl">Lorem ipsum dolor sit </h2>
+              <h1 class="md:text-8xl font-bold max-w-[700px] text-5xl">India’s Leading Immigration</h1>
+            </div>
+          </div>
+          <div class="swiper-slide  w-full h-full flex items-center  max-sm:text-center lg:px-40"
+            style="background: linear-gradient(90deg, rgba(0, 0, 0, 0.902),rgba(255, 255, 255, 0)), url(Assets/banners/bg-4.jpg);">
+            <div class="p-16 border1 max-sm:!bg-none max-sm:p-10">
+              <h2 class="sm:text-3xl mb-10 text-2xl">Lorem ipsum dolor sit </h2>
+              <h1 class="md:text-8xl font-bold max-w-[700px] text-5xl">India’s Leading Immigration</h1>
+            </div>
+          </div>
+          <div class="swiper-slide  w-full h-full flex items-center  max-sm:text-center lg:px-40"
+            style="background: linear-gradient(90deg, rgba(0, 0, 0, 0.902), rgba(255, 255, 255, 0)), url(Assets/banners/bg2.jpg);">
+            <div class="p-16 border1 max-sm:!bg-none max-sm:p-10">
+              <h2 class="sm:text-3xl mb-10 text-2xl">Lorem ipsum dolor sit </h2>
+              <h1 class="md:text-8xl font-bold max-w-[700px] text-5xl">India’s Leading Immigration</h1>
+            </div>
+          </div>
+          <div class="swiper-slide  w-full h-full flex items-center  max-sm:text-center lg:px-40"
+            style="background: linear-gradient(90deg, rgba(0, 0, 0, 0.902), rgba(255, 255, 255, 0)), url(Assets/banners/bg1.jpg);">
+            <div class="p-16 border1 max-sm:!bg-none max-sm:p-10">
+              <h2 class="sm:text-3xl mb-10 text-2xl">Lorem ipsum dolor sit </h2>
+              <h1 class="md:text-8xl font-bold max-w-[700px] text-5xl">India’s Leading Immigration</h1>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="swiper-button-prev font-extrabold  text-[#F20C1F] max-sm:hidden hover:bg-zinc-300 hover:bg-opacity-30 p-8 rounded-full"
+          id="slide-prev1"></div>
+        <div
+          class="swiper-button-next font-extrabold  text-[#F20C1F] max-sm:hidden hover:bg-zinc-700 hover:bg-opacity-30 p-8 rounded-full"
+          id="slide-next1"></div>
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+    </section>
+
+    <!-- News Slider -->
+    <div id="marqueeContainer" class="bg-[#F20C1F] w-full py-5 text-white overflow-hidden">
+      <div id="marqueeContent" class="whitespace-nowrap inline-block">
+        <a href="" class="md:text-5xl text-2xl mr-8 font-bold">Lorem, ipsum dolor sit amet consectetur adipisicing
+          elit.</a>
+        <a href="" class="md:text-5xl text-2xl mr-8 font-bold">This is a marquee text that will scroll from right to
+          left.</a>
+      </div>
+    </div>
+
+    <!-- About section -->
+    <div class="flex max-md:gap-8 lg:p-32 px-9 py-11 flex-wrap justify-around">
+      <div class="md:w-[44%] h-full w-full relative ">
+        <div class=" overflow-hidden hover14 h-full w-full">
+          <img src="/Assets/about1-1h.jpg" alt="" class=" w-full h-full object-cover">
+        </div>
+        <img src="Assets/plane.png" class="absolute -bottom-[50px] -left-[50px] w-56 plane z-10" alt="">
+      </div>
+
+
+      <div class="md:w-[52%] sm:px-11 w-full max-md:text-center flex flex-col max-md:items-center">
+        <h3 class="relative border-2 border-red-200 p-3 px-6 w-max font-bold transition-all text-sm hover:tracking-widest">WHO
+          &nbsp; WE &nbsp; ARE<span class=" absolute -top-[14px] left-[40%] text-xl text-[#F20C1F]"><i
+              class="fa-solid fa-angles-right !font-extrabold"></i><i
+              class="fa-solid fa-angles-right -ml-1 !font-extrabold"></i></span></h3>
+        <h2 class="font-bold sm:text-4xl text-3xl md:text-5xl my-8">Best Immigration & Visa Consultation.</h2>
+        <P >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta a placeat veniam sint
+          accusantium necessitatibus quis tempore, provident id debitis, cumque consequuntur ab. Quos, vero. Architecto
+          nostrum dolor facere officiis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta a placeat
+          veniam sint accusantium necessitatibus quis tempore, provident id debitis, cumque consequuntur ab. Quos, vero.
+          Architecto nostrum dolor facere officiis?</P>
+        <div class="flex justify-between flex-wrap text-xl font-bold my-8">
+          <p><i class="fa-solid fa-circle-right text-[#F20C1F] mr-1"></i> Lorem ipsum, dolor sit </p>
+          <p><i class="fa-solid fa-circle-right text-[#F20C1F] mr-1"></i> Lorem ipsum, dolor sit </p>
+          <p><i class="fa-solid fa-circle-right text-[#F20C1F] mr-1"></i> Lorem ipsum, dolor sit </p>
+          <p><i class="fa-solid fa-circle-right text-[#F20C1F] mr-1"></i> Lorem ipsum, dolor sit </p>
+          <p><i class="fa-solid fa-circle-right text-[#F20C1F] mr-1"></i> Lorem ipsum, dolor sit </p>
+          <p><i class="fa-solid fa-circle-right text-[#F20C1F] mr-1"></i> Lorem ipsum, dolor sit </p>
+        </div>
+        <img class="w-3/4" src="Assets/awards.png" alt="">
+      </div>
+    </div>
+
+    <!-- services section -->
+
+    <section class="news-slider p-20 xl:p-32 px-9 flex flex-col items-center lg:!pb-[600px]">
+      <h3
+        class="relative border-2 border-white p-3 px-6 w-max font-bold transition-all text-white hover:tracking-widest">
+        SERVICE
+        &nbsp; WE &nbsp; PROVIDE<span class=" absolute -top-[16px] left-[42%] text-2xl "><i
+            class="fa-solid fa-angles-right text-[#F20C1F] !font-extrabold"></i><i
+            class="fa-solid fa-angles-right -ml-1 !font-extrabold text-[#F20C1F]"></i></span></h3>
+      <h2 class="md:text-5xl text-4xl mt-8 font-bold max-w-[750px] text-center text-white">Outstanding immigration visa
+        services
+      </h2>
+
+      <!-- slider -->
+      <div class="swiper2 w-full h-auto mt-11 overflow-hidden">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper text-white">
+          <div class="swiper-slide card1 h-auto pb-4 w-full  border-[8px] border-white bg-white overflow-hidden">
+            <div class="image">
+              <div class="service-featured-img">
+                <img loading="lazy" decoding="async" src="/Assets/banners/bg1.jpg" width="500" height="300" alt="">
+              </div>
+              <div class="service-featured-img">
+                <img loading="lazy" decoding="async" src="/Assets/banners/bg1.jpg" width="500" height="300" alt="">
+              </div>
+            </div>
+            <div
+              class="shadow  sticky -mt-[40px] rounded-2xl  w-[90%] ml-[5%] bg-zinc-100 border-t-[5px] p-4 border-[#F20C1F] flex flex-wrap items-center justify-between z-20 text-black">
+              <div>
+                <p class="text-lg">01</p>
+                <h3 class="text-2xl font-bold max-sm:text-xl">Student Visa</h3>
+              </div><i
+                class="fa-solid fa-book-atlas py-5 md:px-[24px] text-4xl rounded-full bg-white text-[#F20C1F] w-20 h-20 max-md:text-xl max-md:h-11 max-md:w-11 text-center max-md:p-2"></i>
+            </div>
+            <div class="w-[90%] ml-[5%] mt-5 text-lg text-zinc-700 font-medium outfit ">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur non magni </p>
+              <hr class="my-5">
+
+              <a href="" class="text-[#F20C1F] font-bold hover:border-b-2 border-[#F20C1F] ">Read More ></a>
+            </div>
+          </div>
+
+          <div class="swiper-slide card1 h-auto pb-4 w-full  border-[8px] border-white bg-white overflow-hidden">
+            <div class="image">
+              <div class="service-featured-img">
+                <img loading="lazy" decoding="async" src="/Assets/banners/bg1.jpg" width="500" height="300" alt="">
+              </div>
+              <div class="service-featured-img">
+                <img loading="lazy" decoding="async" src="/Assets/banners/bg1.jpg" width="500" height="300" alt="">
+              </div>
+            </div>
+            <div
+              class="shadow  sticky -mt-[40px] rounded-2xl  w-[90%] ml-[5%] bg-zinc-100 border-t-[5px] p-4 border-[#F20C1F] flex flex-wrap items-center justify-between z-20 text-black">
+              <div>
+                <p class="text-lg">01</p>
+                <h3 class="text-2xl font-bold max-sm:text-xl">Student Visa</h3>
+              </div><i
+                class="fa-solid fa-book-atlas py-5 md:px-[24px] text-4xl rounded-full bg-white text-[#F20C1F] w-20 h-20 max-md:text-xl max-md:h-11 max-md:w-11 text-center max-md:p-2"></i>
+            </div>
+            <div class="w-[90%] ml-[5%] mt-5 text-lg text-zinc-700 font-medium outfit ">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur non magni </p>
+              <hr class="my-5">
+
+              <a href="" class="text-[#F20C1F] font-bold hover:border-b-2 border-[#F20C1F] ">Read More ></a>
+            </div>
+          </div>
+
+          <div class="swiper-slide card1 h-auto pb-4 w-full  border-[8px] border-white bg-white overflow-hidden">
+            <div class="image">
+              <div class="service-featured-img">
+                <img loading="lazy" decoding="async" src="/Assets/banners/bg1.jpg" width="500" height="300" alt="">
+              </div>
+              <div class="service-featured-img">
+                <img loading="lazy" decoding="async" src="/Assets/banners/bg1.jpg" width="500" height="300" alt="">
+              </div>
+            </div>
+            <div
+              class="shadow  sticky -mt-[40px] rounded-2xl  w-[90%] ml-[5%] bg-zinc-100 border-t-[5px] p-4 border-[#F20C1F] flex flex-wrap items-center justify-between z-20 text-black">
+              <div>
+                <p class="text-lg">01</p>
+                <h3 class="text-2xl font-bold max-sm:text-xl">Student Visa</h3>
+              </div><i
+                class="fa-solid fa-book-atlas py-5 md:px-[24px] text-4xl rounded-full bg-white text-[#F20C1F] w-20 h-20 max-md:text-xl max-md:h-11 max-md:w-11 text-center max-md:p-2"></i>
+            </div>
+            <div class="w-[90%] ml-[5%] mt-5 text-lg text-zinc-700 font-medium outfit ">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur non magni </p>
+              <hr class="my-5">
+
+              <a href="" class="text-[#F20C1F] font-bold hover:border-b-2 border-[#F20C1F] ">Read More ></a>
+            </div>
+          </div>
+
+          <div class="swiper-slide card1 h-auto pb-4 w-full  border-[8px] border-white bg-white overflow-hidden">
+            <div class="image">
+              <div class="service-featured-img">
+                <img loading="lazy" decoding="async" src="/Assets/banners/bg1.jpg" width="500" height="300" alt="">
+              </div>
+              <div class="service-featured-img">
+                <img loading="lazy" decoding="async" src="/Assets/banners/bg1.jpg" width="500" height="300" alt="">
+              </div>
+            </div>
+            <div
+              class="shadow  sticky -mt-[40px] rounded-2xl  w-[90%] ml-[5%] bg-zinc-100 border-t-[5px] p-4 border-[#F20C1F] flex flex-wrap items-center justify-between z-20 text-black">
+              <div>
+                <p class="text-lg">01</p>
+                <h3 class="text-2xl font-bold max-sm:text-xl">Student Visa</h3>
+              </div><i
+                class="fa-solid fa-book-atlas py-5 md:px-[24px] text-4xl rounded-full bg-white text-[#F20C1F] w-20 h-20 max-md:text-xl max-md:h-11 max-md:w-11 text-center max-md:p-2"></i>
+            </div>
+            <div class="w-[90%] ml-[5%] mt-5 text-lg text-zinc-700 font-medium outfit ">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur non magni </p>
+              <hr class="my-5">
+
+              <a href="" class="text-[#F20C1F] font-bold hover:border-b-2 border-[#F20C1F] ">Read More ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- why choose us -->
+    <section class="lg:sticky lg:w-[90%] lg:ml-[10%] flex lg:-mt-[450px] flex-wrap w-full ">
+      <div class="lg:py-28 p-14 w-[44%] text-white why-choose ">
+        <h2 class="md:text-5xl text-3xl font-bold mb-9 md:!leading-[1.2]">We ensure prompt services for visa & Immigration</h2>
+        <div class="flex my-8">
+          <i class="fa-solid fa-earth-asia mr-6 text-5xl"></i>
+          <div class="w-auto">
+            <h3 class="text-xl font-medium mb-1 md:mb-3">Fastest Working Process</h3>
+            <p class="text-lg md:!leading-[1.6]">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+            </p>
+          </div>
+        </div>
+        <div class="flex my-8">
+          <i class="fa-solid fa-earth-asia mr-6 text-5xl"></i>
+          <div class="w-auto">
+            <h3 class="text-xl font-medium mb-1 md:mb-3">Fastest Working Process</h3>
+            <p class="text-lg md:!leading-[1.6]">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+            </p>
+          </div>
+        </div>
+        <div class="flex my-8">
+          <i class="fa-solid fa-earth-asia mr-6 text-5xl"></i>
+          <div class="w-auto">
+            <h3 class="text-xl font-medium mb-1 md:mb-3">Fastest Working Process</h3>
+            <p class="text-lg md:!leading-[1.6]">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w-[56%] lg:py-28 p-11 bg-white">
+        <h3 class="relative border-2 border-red-300 p-3 px-6 w-max font-bold transition-all  hover:tracking-widest">
+          WHY &nbsp; CHOOSE &nbsp; US<span class=" absolute -top-[16px] left-[42%] text-2xl "><i
+              class="fa-solid fa-angles-right text-[#F20C1F] !font-extrabold"></i><i
+              class="fa-solid fa-angles-right -ml-1 !font-extrabold text-[#F20C1F]"></i></span></h3>
+        <h2 class="md:text-5xl text-3xl my-8 font-bold max-w-[600px]">Outstanding immigration visa
+          services
+        </h2>
+        <p class="max-w-[600px] outfit text-lg mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+          ipsum cum porro omnis modi dolorem autem, voluptatem ducimus ut, doloribus quo soluta maxime id deleniti
+          cupiditate, labore vel quisquam assumenda.</p>
+        <div class="max-w-[600px] my-9">
+          <h3 class="text-xl font-bold">Visa Consultancy <span class="float-right font-normal">80%</span></h3>
+          <div class="h-2 w-full rounded-full overflow-hidden bg-zinc-200 my-4">
+            <div class="h-full w-[80%] rounded-full overflow-hidden bg-[#F20C1F]"></div>
+          </div>
+          <h3 class="text-xl font-bold">Visa lorem ipsum <span class="float-right font-normal">60%</span></h3>
+          <div class="h-2 w-full rounded-full overflow-hidden bg-zinc-200 my-4">
+            <div class="h-full w-[60%] rounded-full overflow-hidden bg-[#F20C1F]"></div>
+          </div>
+          <h3 class="text-xl font-bold">Visa lorem ipsum <span class="float-right font-normal">90%</span></h3>
+          <div class="h-2 w-full rounded-full overflow-hidden bg-zinc-200 my-4">
+            <div class="h-full w-[90%] rounded-full overflow-hidden bg-[#F20C1F]"></div>
+          </div>
+        </div>
+        <div class="flex md:mt-7 items-center mt-3 group max-w-[260px]">
+          <img src="Assets/banners/bg-4.jpg" alt=""
+            class="h-20 w-20 mr-4 rounded-full object-cover transition-all group-hover:-scale-x-100">
+          <div>
+            <h3 class="text-xl font-bold">Amit g. raghav</h3>
+            <p>Founder and maneger</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Choose country -->
+    <section class="p-20 xl:p-32 px-9 flex  bg-zinc-200 border-t-[9px] border-[#F20C1F]">
+      <div class="sm:w-[44%] h-full max-sm:hidden hover15 overflow-hidden py-5">
+        <img src="Assets/about1-1h.jpg" class="h-full w-full object-cover " alt="">
+      </div>
+      <div class="w-[56%] p-5 md:pl-16">
+        <h3 class="relative border-2 border-red-300 p-3 px-6 w-max font-bold transition-all  hover:tracking-widest">
+         CHOOSE &nbsp; YOUR &nbsp; COUNTRY<span class=" absolute -top-[16px] left-[42%] text-2xl "><i
+              class="fa-solid fa-angles-right text-[#F20C1F] !font-extrabold"></i><i
+              class="fa-solid fa-angles-right -ml-1 !font-extrabold text-[#F20C1F]"></i></span>
+        </h3>
+        <h2 class="md:text-5xl text-3xl my-8 font-bold ">Outstanding immigration visa
+          services
+        </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis adipisci reprehenderit aliquid itaque
+          esse amet beatae inventore molestiae et quam! Sit neque eligendi, voluptatem reiciendis iste vel enim. Rerum,
+          obcaecati?</p>
+
+        <div class="swiper3 w-full h-auto mt-11 overflow-hidden">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper ">
+            <div
+              class=" swiper-slide w-full group p-5 bg-white hover:bg-black hover:text-white transition-all relative">
+              <i
+                class="fa-solid fa-arrow-right bg-[#F20C1F] text-white hover:bg-black absolute p-3 top-0 right-0 text-2xl "></i>
+              <div class="flex  items-center">
+                <img src="Assets/banners/bg-4.jpg" alt=""
+                  class="h-14 w-14 mr-4 rounded-full border-white border-[3px] object-cover transition-all group-hover:rotate-[360deg]">
+                <div>
+                  <h3 class="text-2xl font-bold">Australia</h3>
+                </div>
+              </div>
+              <hr class="my-5">
+              <p class="mb-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptas a ea </p>
+            </div>
+            <div
+              class=" swiper-slide w-full group p-5 bg-white hover:bg-black hover:text-white transition-all relative">
+              <i
+                class="fa-solid fa-arrow-right bg-[#F20C1F] text-white hover:bg-black absolute p-3 top-0 right-0 text-2xl "></i>
+              <div class="flex  items-center">
+                <img src="Assets/banners/bg-4.jpg" alt=""
+                  class="h-14 w-14 mr-4 rounded-full border-white border-[3px] object-cover transition-all group-hover:rotate-[360deg]">
+                <div>
+                  <h3 class="text-2xl font-bold">Australia</h3>
+                </div>
+              </div>
+              <hr class="my-5">
+              <p class="mb-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptas a ea </p>
+            </div>
+            <div
+              class=" swiper-slide w-full group p-5 bg-white hover:bg-black hover:text-white transition-all relative">
+              <i
+                class="fa-solid fa-arrow-right bg-[#F20C1F] text-white hover:bg-black absolute p-3 top-0 right-0 text-2xl "></i>
+              <div class="flex  items-center">
+                <img src="Assets/banners/bg-4.jpg" alt=""
+                  class="h-14 w-14 mr-4 rounded-full border-white border-[3px] object-cover transition-all group-hover:rotate-[360deg]">
+                <div>
+                  <h3 class="text-2xl font-bold">Australia</h3>
+                </div>
+              </div>
+              <hr class="my-5">
+              <p class="mb-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptas a ea </p>
+            </div>
+          </div>
+
+          <div class="flex gap-5 mt-8 justify-center">
+            <div id="slide-prev2"><i
+                class="fa-solid fa-circle-chevron-left text-5xl text-[#F20C1F] hover:text-black rounded-full"></i></div>
+            <div id="slide-next2"><i
+                class="fa-solid fa-circle-chevron-right text-5xl text-[#F20C1F] hover:text-black rounded-full"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- certificates and training-->
+    <section class="p-20 xl:p-32 px-9 flex flex-col items-center">
+      <h3 class="relative border-2 border-red-300 p-3 px-6 w-max font-bold transition-all  hover:tracking-widest">
+        TRAINING
+        &nbsp; & &nbsp; CERTIFICATION<span class=" absolute -top-[16px] left-[42%] text-2xl "><i
+            class="fa-solid fa-angles-right text-[#F20C1F] !font-extrabold"></i><i
+            class="fa-solid fa-angles-right -ml-1 !font-extrabold text-[#F20C1F]"></i></span></h3>
+      <h2 class="md:text-5xl text-4xl mt-8 font-bold max-w-[750px] text-center mb-7">We Provide Special Care To Make
+        Easy
+        Your Dream
+      </h2>
+      <div class="flex max-sm:justify-center  justify-between flex-wrap">
+        <div
+          class="mt-[150px] p-11 bg-zinc-200 relative lg:w-[23%] sm:w-[45%]  max-w-[400px] flex items-center flex-col group transition-all duration-500 ease-out">
+          <img src="Assets/about1-1h.jpg"
+            class="w-48 h-48 rounded-full absolute object-cover -top-28 group-hover:-scale-x-100 transition-all duration-500 ease-out"
+            alt="">
+          <i
+            class="fa-solid fa-plane-up text-2xl text-white rounded-full bg-[#F20C1F] px-4 py-3 absolute top-12 border-white border-[3px] left-[25%] group-hover:bg-black group-hover:rotate-[45deg] transition-all duration-500 ease-out"></i>
+          <h3
+            class="text-center font-bold text-2xl mt-20 group-hover:text-[#F20C1F] transition-colors duration-500 ease-out">
+            OET Coaching</h3>
+          <p class="outfit text-lg text-center my-3 transition-all duration-500 ease-out group-hover:text-gray-700">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique.</p>
+          <a href="#" class="group mt-4 text-xl font-bold text-[#F20C1F] flex items-center outfit">
+            <span
+              class="w-0 overflow-hidden whitespace-nowrap transition-all duration-700 ease-in-out group-hover:w-[102px] inline-block">Read
+              More</span>
+            <i
+              class="fa-solid fa-arrow-right ml-2 transition-transform duration-300 ease-in-out group-hover:translate-x-1"></i>
+          </a>
+        </div>
+        <div
+        class="mt-[150px] p-11 bg-zinc-200 relative lg:w-[23%] sm:w-[45%]  max-w-[400px] flex items-center flex-col group transition-all duration-500 ease-out">
+        <img src="Assets/about1-1h.jpg"
+          class="w-48 h-48 rounded-full absolute object-cover -top-28 group-hover:-scale-x-100 transition-all duration-500 ease-out"
+          alt="">
+        <i
+          class="fa-solid fa-plane-up text-2xl text-white rounded-full bg-[#F20C1F] px-4 py-3 absolute top-12 border-white border-[3px] left-[25%] group-hover:bg-black group-hover:rotate-[45deg] transition-all duration-500 ease-out"></i>
+        <h3
+          class="text-center font-bold text-2xl mt-20 group-hover:text-[#F20C1F] transition-colors duration-500 ease-out">
+          OET Coaching</h3>
+        <p class="outfit text-lg text-center my-3 transition-all duration-500 ease-out group-hover:text-gray-700">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique.</p>
+        <a href="#" class="group mt-4 text-xl font-bold text-[#F20C1F] flex items-center outfit">
+          <span
+            class="w-0 overflow-hidden whitespace-nowrap transition-all duration-700 ease-in-out group-hover:w-[102px] inline-block">Read
+            More</span>
+          <i
+            class="fa-solid fa-arrow-right ml-2 transition-transform duration-300 ease-in-out group-hover:translate-x-1"></i>
+        </a>
+      </div>
+        <div
+        class="mt-[150px] p-11 bg-zinc-200 relative lg:w-[23%] sm:w-[45%]  max-w-[400px] flex items-center flex-col group transition-all duration-500 ease-out">
+        <img src="Assets/about1-1h.jpg"
+          class="w-48 h-48 rounded-full absolute object-cover -top-28 group-hover:-scale-x-100 transition-all duration-500 ease-out"
+          alt="">
+        <i
+          class="fa-solid fa-plane-up text-2xl text-white rounded-full bg-[#F20C1F] px-4 py-3 absolute top-12 border-white border-[3px] left-[25%] group-hover:bg-black group-hover:rotate-[45deg] transition-all duration-500 ease-out"></i>
+        <h3
+          class="text-center font-bold text-2xl mt-20 group-hover:text-[#F20C1F] transition-colors duration-500 ease-out">
+          OET Coaching</h3>
+        <p class="outfit text-lg text-center my-3 transition-all duration-500 ease-out group-hover:text-gray-700">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique.</p>
+        <a href="#" class="group mt-4 text-xl font-bold text-[#F20C1F] flex items-center outfit">
+          <span
+            class="w-0 overflow-hidden whitespace-nowrap transition-all duration-700 ease-in-out group-hover:w-[102px] inline-block">Read
+            More</span>
+          <i
+            class="fa-solid fa-arrow-right ml-2 transition-transform duration-300 ease-in-out group-hover:translate-x-1"></i>
+        </a>
+      </div>
+        <div
+        class="mt-[150px] p-11 bg-zinc-200 relative lg:w-[23%] sm:w-[45%]  max-w-[400px] flex items-center flex-col group transition-all duration-500 ease-out">
+        <img src="Assets/about1-1h.jpg"
+          class="w-48 h-48 rounded-full absolute object-cover -top-28 group-hover:-scale-x-100 transition-all duration-500 ease-out"
+          alt="">
+        <i
+          class="fa-solid fa-plane-up text-2xl text-white rounded-full bg-[#F20C1F] px-4 py-3 absolute top-12 border-white border-[3px] left-[25%] group-hover:bg-black group-hover:rotate-[45deg] transition-all duration-500 ease-out"></i>
+        <h3
+          class="text-center font-bold text-2xl mt-20 group-hover:text-[#F20C1F] transition-colors duration-500 ease-out">
+          OET Coaching</h3>
+        <p class="outfit text-lg text-center my-3 transition-all duration-500 ease-out group-hover:text-gray-700">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique.</p>
+        <a href="#" class="group mt-4 text-xl font-bold text-[#F20C1F] flex items-center outfit">
+          <span
+            class="w-0 overflow-hidden whitespace-nowrap transition-all duration-700 ease-in-out group-hover:w-[102px] inline-block">Read
+            More</span>
+          <i
+            class="fa-solid fa-arrow-right ml-2 transition-transform duration-300 ease-in-out group-hover:translate-x-1"></i>
+        </a>
+      </div>
+
+      </div>
+    </section>
+
+    <!-- process of application -->
+    <section class="p-20 xl:p-32 px-9 flex flex-col items-center bg-zinc-200">
+      <h3 class="relative border-2 border-red-300 p-3 px-6 w-max font-bold transition-all  hover:tracking-widest">
+        WORKING
+        &nbsp; PROCESS<span class=" absolute -top-[16px] left-[42%] text-2xl "><i
+            class="fa-solid fa-angles-right text-[#F20C1F] !font-extrabold"></i><i
+            class="fa-solid fa-angles-right -ml-1 !font-extrabold text-[#F20C1F]"></i></span></h3>
+      <h2 class="md:text-5xl text-4xl mt-8 font-bold max-w-[750px] text-center mb-[90px]">Get your visa approved in 3 easy
+        simple steps </h2>
+      <div class="flex max-sm:justify-center lg:justify-around justify-between gap-5 flex-wrap w-full relative">
+        <img src="Assets/stepper.png" class="w-full top-16 absolute max-lg:hidden" alt="">
+        <div class="lg:w-[30%] sm:w-[45%]  max-w-[400px] flex items-center flex-col group ">
+          <div class="relative p-2 border-dashed bg-zinc-200 border-[#F20C1F] border-4 rounded-full ">
+            <img src="Assets/about1-1h.jpg"
+              class="w-48 h-48 rounded-full object-cover transition-all group-hover:scale-110" alt="">
+            <i
+              class="fa-solid fa-circle-check absolute text-5xl text-[#F20C1F] rounded-full right-3 -top-1 border-white border-2 bg-white transition-all group-hover:text-black"></i>
+          </div>
+          <div class="text-center sm:p-9 p-6 mt-4 group-hover:bg-white group-hover:shadow-lg transition-all">
+            <h4 class="text-[#F20C1F] font-bold text-lg my-3">STEP 1</h4>
+            <h3
+              class="text-center font-bold text-2xl  group-hover:text-[#F20C1F] transition-colors duration-500 ease-out">
+              Complete Online Registrations</h3>
+            <p class="outfit text-lg text-center my-3 transition-all duration-500 ease-out group-hover:text-gray-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="lg:w-[30%] sm:w-[45%]  max-w-[400px] flex items-center flex-col group ">
+          <div class="relative p-2 border-dashed bg-zinc-200 border-[#F20C1F] border-4 rounded-full ">
+            <img src="Assets/about1-1h.jpg"
+              class="w-48 h-48 rounded-full object-cover transition-all group-hover:scale-110" alt="">
+            <i
+              class="fa-solid fa-circle-check absolute text-5xl text-[#F20C1F] rounded-full right-3 -top-1 border-white border-2 bg-white transition-all group-hover:text-black"></i>
+          </div>
+          <div class="text-center p-9 mt-4 group-hover:bg-white group-hover:shadow-lg transition-all">
+            <h4 class="text-[#F20C1F] font-bold text-lg my-3">STEP 2</h4>
+            <h3
+              class="text-center font-bold text-2xl  group-hover:text-[#F20C1F] transition-colors duration-500 ease-out">
+              Complete Online Registrations</h3>
+            <p class="outfit text-lg text-center my-3 transition-all duration-500 ease-out group-hover:text-gray-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="lg:w-[30%] sm:w-[45%]  max-w-[400px] flex items-center flex-col group ">
+          <div class="relative p-2 border-dashed bg-zinc-200 border-[#F20C1F] border-4 rounded-full ">
+            <img src="Assets/about1-1h.jpg"
+              class="w-48 h-48 rounded-full object-cover transition-all group-hover:scale-110" alt="">
+            <i
+              class="fa-solid fa-circle-check absolute text-5xl text-[#F20C1F] rounded-full right-3 -top-1 border-white border-2 bg-white transition-all group-hover:text-black"></i>
+          </div>
+          <div class="text-center p-9 mt-4 group-hover:bg-white group-hover:shadow-lg transition-all">
+            <h4 class="text-[#F20C1F] font-bold text-lg my-3">STEP 3</h4>
+            <h3
+              class="text-center font-bold text-2xl  group-hover:text-[#F20C1F] transition-colors duration-500 ease-out">
+              Complete Online Registrations</h3>
+            <p class="outfit text-lg text-center my-3 transition-all duration-500 ease-out group-hover:text-gray-700">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+
+      
+    </section>
+
+
+  </main>
+  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="swiper.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
