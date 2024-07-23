@@ -19,398 +19,9 @@
     ></script>
     <script src="tailwind.js"></script>
     <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <link rel="stylesheet" href="./src/index.css" />
   </head>
 
   <body x-data>
-    <header class="flex flex-row">
-      <div class="bg-white p-4 flex justify-center items-center">
-        <img
-          src="Assets/logo1.png"
-          class="lg:w-[350px] h-auto md:w-[300px] w-[190px]"
-          alt="Logo"
-        />
-      </div>
-      <div class="w-full max-sm:hidden">
-        <div
-          class="flex justify-between bg-[#F20C1F] w-full p-4 px-11 text-white items-center"
-        >
-          <div class="flex gap-7 text-white text-xl">
-            <a href="#"
-              ><i
-                class="fa-brands hover:text-black transition-all fa-x-twitter"
-              ></i
-            ></a>
-            <a href="#"
-              ><i
-                class="fa-brands hover:text-black transition-all fa-facebook-f"
-              ></i
-            ></a>
-            <a href="#"
-              ><i
-                class="fa-brands hover:text-black transition-all fa-instagram"
-              ></i
-            ></a>
-            <a href="#"
-              ><i
-                class="fa-brands hover:text-black transition-all fa-linkedin-in"
-              ></i
-            ></a>
-          </div>
-          <ul class="flex gap-7 !text-[16px] items-center">
-            <li>
-              <a
-                href="construction.html"
-                class="hover:border-b transition-all border-white"
-                >About Us</a
-              >
-            </li>
-            <li>
-              <a
-                href="construction.html"
-                class="hover:border-b transition-all border-white"
-                >Our Services</a
-              >
-            </li>
-            <li>
-              <a
-                href="construction.html"
-                class="hover:border-b transition-all border-white"
-                >News</a
-              >
-            </li>
-            <li>
-              <a
-                href="construction.html"
-                class="hover:border-b transition-all border-white"
-                >Coaching</a
-              >
-            </li>
-            <li>
-              <a
-                href="construction.html"
-                class="hover:border-b transition-all border-white"
-                >Blogs</a
-              >
-            </li>
-            <li>
-              <a
-                href="construction.html"
-                class="hover:border-b transition-all border-white"
-                >Contact Us</a
-              >
-            </li>
-            <li>
-              <a
-                href="construction.html"
-                class="contact-btn text-lg shadow pr-6 text-black flex items-center"
-              >
-                <i
-                  class="fa-solid fa-phone mr-2 bg-[#F20C1F] rounded-full text-white p-3"
-                ></i>
-                <p class="leading-5 text-left text-[16px]">
-                  Call Anytime<br />+91 00000 8998
-                </p>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <nav class="nav-main">
-          <ul class="nav-list">
-            <li
-              class="nav-item main"
-              x-data="{ open: false }"
-              @mouseenter="open = true"
-              @mouseleave="open = false"
-            >
-              <a href="construction.html" @click.prevent="open = !open"
-                >Canada</a
-              >
-              <ul
-                x-show="open"
-                x-transition:enter="submenu-enter"
-                x-transition:leave="submenu-leave"
-                class="submenu"
-              >
-                <li>
-                  <a href="construction.html"
-                    >Canada Permanent Residency Visa</a
-                  >
-                </li>
-                <li><a href="construction.html">Canada Express Entry</a></li>
-                <li>
-                  <a href="construction.html">Canada Family Sponsorship</a>
-                </li>
-                <li
-                  x-data="{ open: false }"
-                  @mouseenter="open = true"
-                  @mouseleave="open = false"
-                >
-                  <a href="construction.html" @click.prevent="open = !open"
-                    >Provincial Nominee Program (PNP)
-                    <i class="fa-solid fa-angle-right float-right ml-3"></i
-                  ></a>
-                  <ul
-                    x-show="open"
-                    x-transition:enter="submenu-enter"
-                    x-transition:leave="submenu-leave"
-                    class="submenu-nested"
-                  >
-                    <li><a href="construction.html">Manitoba PNP</a></li>
-                    <li>
-                      <a href="construction.html">Yukon Nominee Program</a>
-                    </li>
-                    <li><a href="construction.html">Ontario PNP Program</a></li>
-                    <li><a href="construction.html">Nova Scotia PNP</a></li>
-                    <li><a href="construction.html">Alberta PNP Program</a></li>
-                    <li>
-                      <a href="construction.html"
-                        >British Columbia PNP Program</a
-                      >
-                    </li>
-                    <li>
-                      <a href="construction.html"
-                        >Quebec Skilled Worker Program</a
-                      >
-                    </li>
-                    <li><a href="construction.html">Saskatchewan PNP</a></li>
-                    <li>
-                      <a href="construction.html">New Brunswick PNP Program</a>
-                    </li>
-                    <li>
-                      <a href="construction.html"
-                        >Atlantic Immigration Program</a
-                      >
-                    </li>
-                    <li><a href="construction.html">PEI PNP Program</a></li>
-                    <li><a href="construction.html">NL PNP Program</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="construction.html">Atlantic Immigration Pilot</a>
-                </li>
-                <li><a href="construction.html">Canada Business Visa</a></li>
-                <li>
-                  <a href="construction.html">Self-employed Persons Program</a>
-                </li>
-                <li><a href="construction.html">Caregivers</a></li>
-                <li>
-                  <a href="construction.html"
-                    >Rural and Northern Immigration Pilot</a
-                  >
-                </li>
-                <li><a href="construction.html">Canada Agri-Food Pilot</a></li>
-                <li>
-                  <a href="construction.html">Canada Refugees and Asylum</a>
-                </li>
-              </ul>
-            </li>
-
-            <li
-              class="nav-item main"
-              x-data="{ open: false }"
-              @mouseenter="open = true"
-              @mouseleave="open = false"
-            >
-              <a href="construction.html" @click.prevent="open = !open"
-                >Australia</a
-              >
-              <ul
-                x-show="open"
-                x-transition:enter="submenu-enter"
-                x-transition:leave="submenu-leave"
-                class="submenu"
-              >
-                <li>
-                  <a href="construction.html"
-                    >Australia Permanent Residency Visa</a
-                  >
-                </li>
-                <li>
-                  <a href="construction.html">Australia Skilled Migration</a>
-                </li>
-                <li>
-                  <a href="construction.html"
-                    >Australia Employer Sponsored Visas</a
-                  >
-                </li>
-                <li><a href="construction.html">Australia Family Visas</a></li>
-                <li><a href="construction.html">Australia Student Visas</a></li>
-                <li>
-                  <a href="construction.html">Australia Subclass 482 Visa</a>
-                </li>
-              </ul>
-            </li>
-
-            <li
-              class="nav-item main"
-              x-data="{ open: false }"
-              @mouseenter="open = true"
-              @mouseleave="open = false"
-            >
-              <a href="construction.html" @click.prevent="open = !open"
-                >Germany</a
-              >
-              <ul
-                x-show="open"
-                x-transition:enter="submenu-enter"
-                x-transition:leave="submenu-leave"
-                class="submenu"
-              >
-                <li><a href="construction.html">Job Seeker Visa</a></li>
-                <li><a href="construction.html">Tourist Visa</a></li>
-              </ul>
-            </li>
-
-            <li
-              class="nav-item main"
-              x-data="{ open: false }"
-              @mouseenter="open = true"
-              @mouseleave="open = false"
-            >
-              <a href="construction.html" @click.prevent="open = !open">UK</a>
-              <ul
-                x-show="open"
-                x-transition:enter="submenu-enter"
-                x-transition:leave="submenu-leave"
-                class="submenu"
-              >
-                <li><a href="construction.html">Work Visa</a></li>
-                <li><a href="construction.html">Tourist Visa</a></li>
-              </ul>
-            </li>
-
-            <li
-              class="nav-item main"
-              x-data="{ open: false }"
-              @mouseenter="open = true"
-              @mouseleave="open = false"
-            >
-              <a href="construction.html" @click.prevent="open = !open"
-                >Gulf Nations</a
-              >
-              <ul
-                x-show="open"
-                x-transition:enter="submenu-enter"
-                x-transition:leave="submenu-leave"
-                class="submenu"
-              >
-                <li>
-                  <a href="construction.html"
-                    >Canada Permanent Residency Visa</a
-                  >
-                </li>
-                <li><a href="construction.html">Work Visa</a></li>
-                <li><a href="construction.html">Tourist Visa</a></li>
-              </ul>
-            </li>
-
-            <li
-              class="nav-item main"
-              x-data="{ open: false }"
-              @mouseenter="open = true"
-              @mouseleave="open = false"
-            >
-              <a href="construction.html" @click.prevent="open = !open"
-                >Tourist Visa</a
-              >
-              <ul
-                x-show="open"
-                x-transition:enter="submenu-enter"
-                x-transition:leave="submenu-leave"
-                class="submenu"
-              >
-                <li><a href="construction.html">Canada Tourist Visa</a></li>
-                <li><a href="construction.html">Australia Tourist Visa</a></li>
-                <li><a href="construction.html">USA Tourist Visa</a></li>
-                <li><a href="construction.html">UK Tourist Visa</a></li>
-                <li><a href="construction.html">Germany Tourist Visa</a></li>
-                <li><a href="construction.html">Dubai Tourist Visa</a></li>
-                <li><a href="construction.html">Italy Tourist Visa</a></li>
-                <li><a href="construction.html">Ireland Tourist Visa</a></li>
-              </ul>
-            </li>
-
-            <li
-              class="nav-item main"
-              x-data="{ open: false }"
-              @mouseenter="open = true"
-              @mouseleave="open = false"
-            >
-              <a href="construction.html" @click.prevent="open = !open"
-                >Study Visa</a
-              >
-              <ul
-                x-show="open"
-                x-transition:enter="submenu-enter"
-                x-transition:leave="submenu-leave"
-                class="submenu"
-              >
-                <li><a href="construction.html">Study In Canada</a></li>
-                <li><a href="construction.html">Study In Australia</a></li>
-                <li><a href="construction.html">Study In Germany</a></li>
-                <li><a href="construction.html">Study In Italy</a></li>
-                <li><a href="construction.html">Study In Singapore</a></li>
-                <li><a href="construction.html">Study In UK</a></li>
-                <li><a href="construction.html">Study In USA</a></li>
-                <li><a href="construction.html">Study In New Zealand</a></li>
-                <li><a href="construction.html">Study In Dubai</a></li>
-                <li><a href="construction.html">Study In Ireland</a></li>
-              </ul>
-            </li>
-
-            <li
-              class="nav-item main"
-              x-data="{ open: false }"
-              @mouseenter="open = true"
-              @mouseleave="open = false"
-            >
-              <a href="construction.html" @click.prevent="open = !open"
-                >Work Permit Visa</a
-              >
-              <ul
-                x-show="open"
-                x-transition:enter="submenu-enter"
-                x-transition:leave="submenu-leave"
-                class="submenu"
-              >
-                <li><a href="construction.html">Canada Work Visa</a></li>
-                <li><a href="construction.html">Australia Work Visa</a></li>
-                <li><a href="construction.html">Poland Work Visa</a></li>
-                <li><a href="construction.html">UK Work Visa</a></li>
-                <li><a href="construction.html">Portugal Work Visa</a></li>
-                <li><a href="construction.html">Germany Work Visa</a></li>
-                <li><a href="construction.html">Hong Kong Work Visa</a></li>
-                <li><a href="construction.html">Malta Work Visa</a></li>
-                <li><a href="construction.html">New Zealand Work Visa</a></li>
-                <li><a href="construction.html">Sweden Work Visa</a></li>
-                <li><a href="construction.html">Austria Work Visa</a></li>
-              </ul>
-            </li>
-
-            <li
-              class="nav-item main"
-              x-data="{ open: false }"
-              @mouseenter="open = true"
-              @mouseleave="open = false"
-            >
-              <a href="construction.html" @click.prevent="open = !open"
-                >Permanent Residency Visa</a
-              >
-              <ul
-                x-show="open"
-                x-transition:enter="submenu-enter"
-                x-transition:leave="submenu-leave"
-                class="submenu"
-              >
-                <li><a href="construction.html">Canada PR Visa</a></li>
-                <li><a href="construction.html">Australia PR Visa</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
     <main>
       <!-- banner  -->
       <section class="relative h-full w-full text-white">
@@ -430,9 +41,89 @@
           <p><a href="/">Home</a> &#62; About Us</p>
         </div>
       </section>
+      <!-- section 3 part-1  -->
+      <section
+        class="relative h-full w-full text-white mt-16 md:mt-32 max-md:hidden"
+      >
+        <img
+          src="./Assets/aboutUs/download.jpg"
+          class="w-full max-h-[28rem] object-center object-cover"
+          alt="banner"
+        />
+        <div
+          class="absolute inset-0 w-full h-full bg-[linear-gradient(230deg,#e71800_0%,#000_55%)] opacity-80"
+        ></div>
+        <div
+          class="absolute inset-0 flex gap-5 pt-16 justify-center w-full h-full max-md:hidden"
+        >
+          <h2
+            class="text-3xl md:text-5xl font-bold border-l-8 border-red-500 pl-5 h-min"
+          >
+            Most Trusted Immigration <br />& Visa Solutions Agency
+          </h2>
+        </div>
+      </section>
+      <!-- section 3 part-2  -->
+      <section
+        class="md:border-t-8 border-red-500 md:-translate-y-44 bg-zinc-100 w-full md:grid grid-cols-2 gap-2 max-w-screen-xl mx-auto px-5 md:px-10 lg:px-32 max-md:mb-16 py-16"
+      >
+        <!-- left  -->
+        <div class="relative col-span-1 w-full max-md:hidden">
+          <img
+            src="./Assets/aboutUs/passport1.png"
+            class="w-max h-[40rem] object-contain"
+            alt=""
+          />
+        </div>
+        <!-- right  -->
+        <div class="space-y-5">
+          <h3
+            class="relative border-2 border-zinc-300 p-3 px-6 w-max font-bold transition-all text-sm hover:tracking-widest"
+          >
+            CHOOSE &nbsp; COUNTRY<span
+              class="absolute -top-[14px] left-[40%] text-xl text-[#F20C1F]"
+              ><i class="fa-solid fa-angles-right !font-extrabold"></i
+              ><i class="fa-solid fa-angles-right -ml-1 !font-extrabold"></i
+            ></span>
+          </h3>
+          <h4 class="text-3xl md:text-5xl font-bold mb-10">
+            Immigration Choose Your Country
+          </h4>
+          <div class="grid grid-cols-2 gap-5">
+            <!-- card1  -->
+            <div
+              class="bg-white rounded-md text-center p-5 md:py-10 col-span-1 border-b-8 border-red-500"
+            >
+              <h2 class="text-5xl font-bold text-red-500">500+</h2>
+              <p class="text-lg font-medium">Countries</p>
+            </div>
+            <!-- card2  -->
+            <div
+              class="bg-white rounded-md text-center p-5 md:py-10 col-span-1 border-b-8 border-red-500"
+            >
+              <h2 class="text-5xl font-bold text-red-500">500+</h2>
+              <p class="text-lg font-medium">Countries</p>
+            </div>
+            <!-- card3  -->
+            <div
+              class="bg-white rounded-md text-center p-5 md:py-10 col-span-1 border-b-8 border-red-500"
+            >
+              <h2 class="text-5xl font-bold text-red-500">500+</h2>
+              <p class="text-lg font-medium">Countries</p>
+            </div>
+            <!-- card4  -->
+            <div
+              class="bg-white rounded-md text-center p-5 md:py-10 col-span-1 border-b-8 border-red-500"
+            >
+              <h2 class="text-5xl font-bold text-red-500">500+</h2>
+              <p class="text-lg font-medium">Countries</p>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- section 1  -->
       <section
-        class="w-full md:grid grid-cols-2 gap-2 max-w-screen-2xl mx-auto px-5 md:px-10 my-16"
+        class="w-full md:grid grid-cols-2 gap-2 max-w-screen-2xl mx-auto px-5 md:px-10 lg:px-32 my-16 md:my-32"
       >
         <!-- left  -->
         <div class="relative col-span-1 w-full">
@@ -443,7 +134,7 @@
           />
           <img
             src="./Assets/aboutUs/2.jpg"
-            class="w-max h-[30rem] object-contain border-[10px] bottom-0 left-[40%] absolute border-white"
+            class="w-max h-[30rem] object-contain border-[10px] bottom-0 left-[40%] absolute border-white max-md:hidden"
             alt=""
           />
           <div class="absolute bottom-0 left-[20%] p-5 bg-white flex gap-5">
@@ -513,21 +204,25 @@
               <a href="#" class="font-bold text-zinc-500">MORE ➞</a>
             </div>
           </div>
+
           <button
-            class="px-10 py-5 bg-black text-white hover:bg-red-500 duration-300 font-bold"
+            class="px-10 py-5 overflow-hidden group bg-black relative hover:bg-red-500 text-white transition-all ease-out duration-300"
           >
-            DISCOVER MORE
+            <span
+              class="absolute right-0 w-10 h-full top-0 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 -skew-x-12 group-hover:-translate-x-36 ease"
+            ></span>
+            <span class="relative text-xl font-semibold">DISCOVER MORE</span>
           </button>
         </div>
       </section>
-      <!-- section 2  -->
+      <!-- section 6  -->
       <section
-        class="w-full flex flex-col items-center flex-wrap gap-5 max-w-screen-2xl mx-auto px-5 md:px-10 my-16"
+        class="w-full flex flex-col items-center flex-wrap gap-5 max-w-screen-2xl mx-auto px-5 md:px-10 lg:px-32 my-16 md:my-32"
       >
         <h3
           class="relative border-2 border-zinc-200 p-3 px-6 w-max font-bold transition-all text-sm hover:tracking-widest"
         >
-          WHO &nbsp; WE &nbsp; ARE<span
+          OUR &nbsp; TEAM<span
             class="absolute -top-[14px] left-[40%] text-xl text-[#F20C1F]"
             ><i class="fa-solid fa-angles-right !font-extrabold"></i
             ><i class="fa-solid fa-angles-right -ml-1 !font-extrabold"></i
@@ -536,18 +231,18 @@
         <h4 class="text-3xl md:text-5xl font-bold mb-10">
           Experience Team Members
         </h4>
-        <div class="flex justify-center gap-5 flex-wrap">
+        <div class="flex max-md:flex-col justify-center gap-5 flex-wrap">
           <div class="group relative flex-[1]">
             <img
               src="Assets/aboutUs/tm1.jpg"
-              class="max-h-96 relative z-10"
+              class="max-h-96 w-full object-cover relative z-10"
               alt="John Doe"
             />
             <div
               class="relative bg-white shadow-lg py-10 group-hover:bg-red-500 group-hover:text-white duration-100 mx-10 -mt-10 z-20"
             >
               <h3
-                class="pl-5 text-xl font-bold  group-hover:text-white border-l-8 border-red-500 group-hover:border-black"
+                class="pl-5 text-xl font-bold group-hover:text-white border-l-8 border-red-500 group-hover:border-black"
               >
                 John Doe
               </h3>
@@ -559,14 +254,14 @@
           <div class="group relative flex-[1]">
             <img
               src="Assets/aboutUs/tm1.jpg"
-              class="max-h-96 relative z-10"
+              class="max-h-96 w-full object-cover relative z-10"
               alt="John Doe"
             />
             <div
               class="relative bg-white shadow-lg py-10 group-hover:bg-red-500 group-hover:text-white duration-100 mx-10 -mt-10 z-20"
             >
               <h3
-                class="pl-5 text-xl font-bold  group-hover:text-white border-l-8 border-red-500 group-hover:border-black"
+                class="pl-5 text-xl font-bold group-hover:text-white border-l-8 border-red-500 group-hover:border-black"
               >
                 John Doe
               </h3>
@@ -578,14 +273,14 @@
           <div class="group relative flex-[1]">
             <img
               src="Assets/aboutUs/tm1.jpg"
-              class="max-h-96 relative z-10"
+              class="max-h-96 w-full object-cover relative z-10"
               alt="John Doe"
             />
             <div
               class="relative bg-white shadow-lg py-10 group-hover:bg-red-500 group-hover:text-white duration-100 mx-10 -mt-10 z-20"
             >
               <h3
-                class="text-xl pl-5 font-bold  group-hover:text-white border-l-8 border-red-500 group-hover:border-black"
+                class="text-xl pl-5 font-bold group-hover:text-white border-l-8 border-red-500 group-hover:border-black"
               >
                 John Doe
               </h3>
@@ -594,6 +289,122 @@
               </p>
             </div>
           </div>
+        </div>
+      </section>
+      <!-- section 4 -->
+      <section
+        class="w-full md:grid grid-cols-3 gap-5 max-w-screen-2xl mx-auto px-5 md:px-10 lg:px-32 my-16 md:my-32"
+      >
+        <!-- card 1  -->
+        <div class="relative w-full shadow-xl group overflow-hidden">
+          <div class="flex gap-5 p-5 py-10">
+            <div
+              class="rounded-full bg-white w-min h-min border-2 border-red-500 border-dotted transition-transform duration-300 group-hover:-scale-x-100 p-5"
+            >
+              <i
+                class="fa-regular fa-paper-plane text-5xl flex-[1] transition-colors duration-300"
+              ></i>
+            </div>
+            <div>
+              <h6
+                class="text-3xl font-bold transition-colors duration-300 group-hover:text-white"
+              >
+                Immigration & Visa Process
+              </h6>
+              <p
+                class="text-zinc-600 transition-colors duration-300 group-hover:text-white"
+              >
+                We strongly support best practice sharing across
+              </p>
+            </div>
+          </div>
+          <!-- animation  -->
+          <div
+            class="absolute inset-0 -z-30 -left-3 w-32 h-full bg-red-500 -skew-x-[30deg] origin-top-right transition-all duration-300 group-hover:w-[110%] group-hover:skew-x-0"
+          ></div>
+          <div
+            class="absolute inset-0 -z-40 -left-32 w-40 h-full bg-zinc-100 skew-x-[30deg] origin-top-right transition-all duration-300 group-hover:w-full group-hover:skew-x-0"
+          ></div>
+          <div
+            class="absolute inset-0 -z-10 -left-3 w-0 group-hover:w-32 h-full group-hover:bg-red-700 -skew-x-[30deg] origin-top-right transition-all duration-300"
+          ></div>
+          <div
+            class="absolute inset-0 -z-20 -left-32 w-0 group-hover:w-40 h-full group-hover:bg-red-600 skew-x-[30deg] origin-top-right transition-all duration-300"
+          ></div>
+        </div>
+        <!-- card 2  -->
+        <div class="relative w-full shadow-xl group overflow-hidden">
+          <div class="flex gap-5 p-5 py-10">
+            <div
+              class="rounded-full bg-white w-min h-min border-2 border-red-500 border-dotted transition-transform duration-300 group-hover:-scale-x-100 p-5"
+            >
+              <i
+                class="fa-regular fa-paper-plane text-5xl flex-[1] transition-colors duration-300"
+              ></i>
+            </div>
+            <div>
+              <h6
+                class="text-3xl font-bold transition-colors duration-300 group-hover:text-white"
+              >
+                Immigration & Visa Process
+              </h6>
+              <p
+                class="text-zinc-600 transition-colors duration-300 group-hover:text-white"
+              >
+                We strongly support best practice sharing across
+              </p>
+            </div>
+          </div>
+          <!-- animation  -->
+          <div
+            class="absolute inset-0 -z-30 -left-3 w-32 h-full bg-red-500 -skew-x-[30deg] origin-top-right transition-all duration-300 group-hover:w-[110%] group-hover:skew-x-0"
+          ></div>
+          <div
+            class="absolute inset-0 -z-40 -left-32 w-40 h-full bg-zinc-100 skew-x-[30deg] origin-top-right transition-all duration-300 group-hover:w-full group-hover:skew-x-0"
+          ></div>
+          <div
+            class="absolute inset-0 -z-10 -left-3 w-0 group-hover:w-32 h-full group-hover:bg-red-700 -skew-x-[30deg] origin-top-right transition-all duration-300"
+          ></div>
+          <div
+            class="absolute inset-0 -z-20 -left-32 w-0 group-hover:w-40 h-full group-hover:bg-red-600 skew-x-[30deg] origin-top-right transition-all duration-300"
+          ></div>
+        </div>
+        <!-- card 2  -->
+        <div class="relative w-full shadow-xl group overflow-hidden">
+          <div class="flex gap-5 p-5 py-10">
+            <div
+              class="rounded-full bg-white w-min h-min border-2 border-red-500 border-dotted transition-transform duration-300 group-hover:-scale-x-100 p-5"
+            >
+              <i
+                class="fa-regular fa-paper-plane text-5xl flex-[1] transition-colors duration-300"
+              ></i>
+            </div>
+            <div>
+              <h6
+                class="text-3xl font-bold transition-colors duration-300 group-hover:text-white"
+              >
+                Immigration & Visa Process
+              </h6>
+              <p
+                class="text-zinc-600 transition-colors duration-300 group-hover:text-white"
+              >
+                We strongly support best practice sharing across
+              </p>
+            </div>
+          </div>
+          <!-- animation  -->
+          <div
+            class="absolute inset-0 -z-30 -left-3 w-32 h-full bg-red-500 -skew-x-[30deg] origin-top-right transition-all duration-300 group-hover:w-[110%] group-hover:skew-x-0"
+          ></div>
+          <div
+            class="absolute inset-0 -z-40 -left-32 w-40 h-full bg-zinc-100 skew-x-[30deg] origin-top-right transition-all duration-300 group-hover:w-full group-hover:skew-x-0"
+          ></div>
+          <div
+            class="absolute inset-0 -z-10 -left-3 w-0 group-hover:w-32 h-full group-hover:bg-red-700 -skew-x-[30deg] origin-top-right transition-all duration-300"
+          ></div>
+          <div
+            class="absolute inset-0 -z-20 -left-32 w-0 group-hover:w-40 h-full group-hover:bg-red-600 skew-x-[30deg] origin-top-right transition-all duration-300"
+          ></div>
         </div>
       </section>
     </main>
