@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nationalize | About Us</title>
+    <title>Nationize</title>
     <link rel="stylesheet" href="/src/header.css" />
     <link
       rel="stylesheet"
@@ -19,6 +19,7 @@
     ></script>
     <script src="tailwind.js"></script>
     <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="./src/index.css" />
   </head>
 
   <body x-data>
@@ -41,102 +42,28 @@
           <p><a href="/">Home</a> &#62; About Us</p>
         </div>
       </section>
-      <!-- section 3 part-1  -->
+      <!-- section 1 - WHO WE ARE  -->
       <section
-        class="relative h-full w-full text-white mt-16 md:mt-32 max-md:hidden"
-      >
-        <img
-          src="./Assets/aboutUs/download.jpg"
-          class="w-full max-h-[28rem] object-center object-cover"
-          alt="banner"
-        />
-        <div
-          class="absolute inset-0 w-full h-full bg-[linear-gradient(230deg,#e71800_0%,#000_55%)] opacity-80"
-        ></div>
-        <div
-          class="absolute inset-0 flex gap-5 pt-16 justify-center w-full h-full max-md:hidden"
-        >
-          <h2
-            class="text-3xl md:text-5xl font-bold border-l-8 border-red-500 pl-5 h-min"
-          >
-            Most Trusted Immigration <br />& Visa Solutions Agency
-          </h2>
-        </div>
-      </section>
-      <!-- section 3 part-2  -->
-      <section
-        class="md:border-t-8 border-red-500 md:-translate-y-44 bg-zinc-100 w-full md:grid grid-cols-2 gap-2 max-w-screen-xl mx-auto px-5 md:px-10 lg:px-32 max-md:mb-16 py-16"
-      >
-        <!-- left  -->
-        <div class="relative col-span-1 w-full max-md:hidden">
-          <img
-            src="./Assets/aboutUs/passport1.png"
-            class="w-max h-[40rem] object-contain"
-            alt=""
-          />
-        </div>
-        <!-- right  -->
-        <div class="space-y-5">
-          <h3
-            class="relative border-2 border-zinc-300 p-3 px-6 w-max font-bold transition-all text-sm hover:tracking-widest"
-          >
-            CHOOSE &nbsp; COUNTRY<span
-              class="absolute -top-[14px] left-[40%] text-xl text-[#F20C1F]"
-              ><i class="fa-solid fa-angles-right !font-extrabold"></i
-              ><i class="fa-solid fa-angles-right -ml-1 !font-extrabold"></i
-            ></span>
-          </h3>
-          <h4 class="text-3xl md:text-5xl font-bold mb-10">
-            Immigration Choose Your Country
-          </h4>
-          <div class="grid grid-cols-2 gap-5">
-            <!-- card1  -->
-            <div
-              class="bg-white rounded-md text-center p-5 md:py-10 col-span-1 border-b-8 border-red-500"
-            >
-              <h2 class="text-5xl font-bold text-red-500">500+</h2>
-              <p class="text-lg font-medium">Countries</p>
-            </div>
-            <!-- card2  -->
-            <div
-              class="bg-white rounded-md text-center p-5 md:py-10 col-span-1 border-b-8 border-red-500"
-            >
-              <h2 class="text-5xl font-bold text-red-500">500+</h2>
-              <p class="text-lg font-medium">Countries</p>
-            </div>
-            <!-- card3  -->
-            <div
-              class="bg-white rounded-md text-center p-5 md:py-10 col-span-1 border-b-8 border-red-500"
-            >
-              <h2 class="text-5xl font-bold text-red-500">500+</h2>
-              <p class="text-lg font-medium">Countries</p>
-            </div>
-            <!-- card4  -->
-            <div
-              class="bg-white rounded-md text-center p-5 md:py-10 col-span-1 border-b-8 border-red-500"
-            >
-              <h2 class="text-5xl font-bold text-red-500">500+</h2>
-              <p class="text-lg font-medium">Countries</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- section 1  -->
-      <section
-        class="w-full md:grid grid-cols-2 gap-2 max-w-screen-2xl mx-auto px-5 md:px-10 lg:px-32 my-16 md:my-32"
+        class="w-full md:grid grid-cols-2 gap-2 max-md:space-y-10 max-w-screen-2xl mx-auto px-5 md:px-10 lg:px-32 my-16 md:my-32"
       >
         <!-- left  -->
         <div class="relative col-span-1 w-full">
-          <img
-            src="./Assets/aboutUs/1.jpg"
-            class="w-max h-[40rem] pb-16 object-contain"
-            alt=""
-          />
-          <img
-            src="./Assets/aboutUs/2.jpg"
-            class="w-max h-[30rem] object-contain border-[10px] bottom-0 left-[40%] absolute border-white max-md:hidden"
-            alt=""
-          />
+          <div class="hover14 overflow-hidden">
+            <img
+              src="./Assets/aboutUs/1.jpg"
+              class="w-max h-[40rem] pb-16 object-contain"
+              alt=""
+            />
+          </div>
+          <div
+            class="hover14 overflow-hidden w-max h-[30rem] object-contain border-[10px] bottom-0 left-[40%] absolute border-white max-lg:hidden"
+          >
+            <img
+              src="./Assets/aboutUs/2.jpg"
+              class="w-full h-full object-cover"
+              alt=""
+            />
+          </div>
           <div class="absolute bottom-0 left-[20%] p-5 bg-white flex gap-5">
             <img
               src="./Assets/aboutUs/3.jpg"
@@ -172,7 +99,7 @@
             <div class="col-span-7 space-y-5">
               <div class="flex gap-4 border-b border-zinc-300 pb-10 mb-10">
                 <i
-                  class="fa-duotone fa-solid fa-plane-departure text-red-500 text-5xl mr-4"
+                  class="fa-duotone fa-solid fa-plane-departure text-[#F20C1F] text-5xl mr-4"
                 ></i>
                 <div class="space-y-5">
                   <p class="text-xl font-bold">Visa Consultation</p>
@@ -184,7 +111,7 @@
               </div>
               <div class="flex gap-4">
                 <i
-                  class="fa-duotone fa-solid fa-earth-americas text-red-500 text-5xl mr-4"
+                  class="fa-duotone fa-solid fa-earth-americas text-[#F20C1F] text-5xl mr-4"
                 ></i>
                 <div class="space-y-5">
                   <p class="text-xl font-bold">Professional Services</p>
@@ -196,7 +123,7 @@
               </div>
             </div>
             <div
-              class="p-5 bg-red-50 border-t-4 border-red-500 max-md:hidden col-span-3 space-y-5 h-full"
+              class="p-5 bg-red-50 border-t-4 border-[#F20C1F] max-md:hidden col-span-3 space-y-5 h-full"
             >
               <p class="font-bold mb-5 text-xl leading-loose">
                 Ready to fly with us your dream country
@@ -206,7 +133,7 @@
           </div>
 
           <button
-            class="px-10 py-5 overflow-hidden group bg-black relative hover:bg-red-500 text-white transition-all ease-out duration-300"
+            class="px-10 py-5 overflow-hidden group bg-black relative hover:bg-[#F20C1F] text-white transition-all ease-out duration-300"
           >
             <span
               class="absolute right-0 w-10 h-full top-0 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 -skew-x-12 group-hover:-translate-x-36 ease"
@@ -215,9 +142,571 @@
           </button>
         </div>
       </section>
-      <!-- section 6  -->
+      <!-- section 3 part-1  -->
       <section
-        class="w-full flex flex-col items-center flex-wrap gap-5 max-w-screen-2xl mx-auto px-5 md:px-10 lg:px-32 my-16 md:my-32"
+        class="relative h-full w-full text-white mt-16 md:mt-32 max-md:hidden"
+      >
+        <img
+          src="./Assets/aboutUs/download.jpg"
+          class="w-full max-h-[28rem] object-center object-cover"
+          alt="banner"
+        />
+        <div
+          class="absolute inset-0 w-full h-full bg-[linear-gradient(230deg,#e71800_0%,#000_55%)] opacity-80"
+        ></div>
+        <div
+          class="absolute inset-0 flex gap-5 pt-16 justify-center w-full h-full max-md:hidden"
+        >
+          <h2
+            class="text-3xl md:text-5xl font-bold border-l-8 border-[#F20C1F] pl-5 h-min"
+          >
+            Most Trusted Immigration <br />& Visa Solutions Agency
+          </h2>
+        </div>
+      </section>
+      <!-- section 3 part-2  -->
+      <section
+        class="md:border-t-8 border-[#F20C1F] md:-translate-y-44 bg-zinc-100 w-full md:grid grid-cols-2 gap-2 max-w-screen-xl mx-auto px-5 md:px-10 lg:px-32 max-md:mb-16 py-16 max-md:my-16"
+      >
+        <!-- left  -->
+        <div
+          class="relative overflow-hidden hover14 col-span-1 w-full max-md:hidden"
+        >
+          <img
+            src="./Assets/aboutUs/passport1.png"
+            class="w-max h-[40rem] object-contain"
+            alt=""
+          />
+        </div>
+        <!-- right  -->
+        <div class="space-y-5">
+          <h3
+            class="relative border-2 border-zinc-300 p-3 px-6 w-max font-bold transition-all text-sm hover:tracking-widest"
+          >
+            CHOOSE &nbsp; COUNTRY<span
+              class="absolute -top-[14px] left-[40%] text-xl text-[#F20C1F]"
+              ><i class="fa-solid fa-angles-right !font-extrabold"></i
+              ><i class="fa-solid fa-angles-right -ml-1 !font-extrabold"></i
+            ></span>
+          </h3>
+          <h4 class="text-3xl md:text-5xl font-bold mb-10">
+            Immigration Choose Your Country
+          </h4>
+          <div class="grid grid-cols-2 gap-5">
+            <!-- card1  -->
+            <div
+              class="bg-white rounded-md text-center p-5 md:py-10 col-span-1 border-b-8 border-[#F20C1F]"
+            >
+              <h2 class="text-5xl font-bold text-[#F20C1F]">500+</h2>
+              <p class="text-lg font-medium">Countries</p>
+            </div>
+            <!-- card2  -->
+            <div
+              class="bg-white rounded-md text-center p-5 md:py-10 col-span-1 border-b-8 border-[#F20C1F]"
+            >
+              <h2 class="text-5xl font-bold text-[#F20C1F]">500+</h2>
+              <p class="text-lg font-medium">Countries</p>
+            </div>
+            <!-- card3  -->
+            <div
+              class="bg-white rounded-md text-center p-5 md:py-10 col-span-1 border-b-8 border-[#F20C1F]"
+            >
+              <h2 class="text-5xl font-bold text-[#F20C1F]">500+</h2>
+              <p class="text-lg font-medium">Countries</p>
+            </div>
+            <!-- card4  -->
+            <div
+              class="bg-white rounded-md text-center p-5 md:py-10 col-span-1 border-b-8 border-[#F20C1F]"
+            >
+              <h2 class="text-5xl font-bold text-[#F20C1F]">500+</h2>
+              <p class="text-lg font-medium">Countries</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- services section - part-1 -->
+      <section
+        class="news-slider p-20 xl:p-32 px-5 flex flex-col items-center lg:!pb-[600px] max-w-screen-2xl mx-auto"
+      >
+        <h3
+          class="relative border-2 border-white p-3 px-6 w-max font-bold transition-all text-white hover:tracking-widest"
+        >
+          SERVICE &nbsp; WE &nbsp; PROVIDE<span
+            class="absolute -top-[16px] left-[42%] text-2xl"
+            ><i
+              class="fa-solid fa-angles-right text-[#F20C1F] !font-extrabold"
+            ></i
+            ><i
+              class="fa-solid fa-angles-right -ml-1 !font-extrabold text-[#F20C1F]"
+            ></i
+          ></span>
+        </h3>
+        <h2
+          class="md:text-5xl text-4xl mt-8 font-bold max-w-[750px] text-center text-white"
+        >
+          Outstanding immigration visa services
+        </h2>
+
+        <!-- slider -->
+        <div class="swiper2 w-full h-auto mt-11 overflow-hidden">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper text-white">
+            <div
+              class="swiper-slide card1 h-auto pb-4 w-full border-[8px] border-white bg-white overflow-hidden"
+            >
+              <div class="image">
+                <div class="service-featured-img">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="/Assets/banners/bg1.jpg"
+                    width="500"
+                    height="300"
+                    alt=""
+                  />
+                </div>
+                <div class="service-featured-img">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="/Assets/banners/bg1.jpg"
+                    width="500"
+                    height="300"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div
+                class="shadow sticky -mt-[40px] rounded-2xl w-[90%] ml-[5%] bg-zinc-100 border-t-[5px] p-4 border-[#F20C1F] flex flex-wrap items-center justify-between z-20 text-black"
+              >
+                <div>
+                  <p class="text-lg">01</p>
+                  <h3 class="text-2xl font-bold max-sm:text-xl">
+                    Immigration Services
+                  </h3>
+                </div>
+                <i
+                  class="fa-solid fa-book-atlas py-5 md:px-[24px] text-4xl rounded-full bg-white text-[#F20C1F] w-20 h-20 max-md:text-xl max-md:h-11 max-md:w-11 text-center max-md:p-2"
+                ></i>
+              </div>
+              <div
+                class="w-[90%] ml-[5%] mt-5 text-lg text-zinc-700 font-medium outfit"
+              >
+                <p>
+                  Comprehensive immigration services to meet your specific needs
+                  and help you achieve your goals abroad.
+                </p>
+                <hr class="my-5" />
+
+                <a
+                  href=""
+                  class="text-[#F20C1F] font-bold hover:border-b-2 border-[#F20C1F]"
+                  >Read More ></a
+                >
+              </div>
+            </div>
+
+            <div
+              class="swiper-slide card1 h-auto pb-4 w-full border-[8px] border-white bg-white overflow-hidden"
+            >
+              <div class="image">
+                <div class="service-featured-img">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="/Assets/banners/bg1.jpg"
+                    width="500"
+                    height="300"
+                    alt=""
+                  />
+                </div>
+                <div class="service-featured-img">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="/Assets/banners/bg1.jpg"
+                    width="500"
+                    height="300"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div
+                class="shadow sticky -mt-[40px] rounded-2xl w-[90%] ml-[5%] bg-zinc-100 border-t-[5px] p-4 border-[#F20C1F] flex flex-wrap items-center justify-between z-20 text-black"
+              >
+                <div>
+                  <p class="text-lg">02</p>
+                  <h3 class="text-2xl font-bold max-sm:text-xl">
+                    Profile Marketing
+                  </h3>
+                </div>
+                <i
+                  class="fa-solid fa-book-atlas py-5 md:px-[24px] text-4xl rounded-full bg-white text-[#F20C1F] w-20 h-20 max-md:text-xl max-md:h-11 max-md:w-11 text-center max-md:p-2"
+                ></i>
+              </div>
+              <div
+                class="w-[90%] ml-[5%] mt-5 text-lg text-zinc-700 font-medium outfit"
+              >
+                <p>
+                  Expert profile marketing to enhance your appeal to employers
+                  and educational institutions abroad.
+                </p>
+                <hr class="my-5" />
+
+                <a
+                  href=""
+                  class="text-[#F20C1F] font-bold hover:border-b-2 border-[#F20C1F]"
+                  >Read More ></a
+                >
+              </div>
+            </div>
+
+            <div
+              class="swiper-slide card1 h-auto pb-4 w-full border-[8px] border-white bg-white overflow-hidden"
+            >
+              <div class="image">
+                <div class="service-featured-img">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="/Assets/banners/bg1.jpg"
+                    width="500"
+                    height="300"
+                    alt=""
+                  />
+                </div>
+                <div class="service-featured-img">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="/Assets/banners/bg1.jpg"
+                    width="500"
+                    height="300"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div
+                class="shadow sticky -mt-[40px] rounded-2xl w-[90%] ml-[5%] bg-zinc-100 border-t-[5px] p-4 border-[#F20C1F] flex flex-wrap items-center justify-between z-20 text-black"
+              >
+                <div>
+                  <p class="text-lg">03</p>
+                  <h3 class="text-2xl font-bold max-sm:text-xl">
+                    Career Counselling
+                  </h3>
+                </div>
+                <i
+                  class="fa-solid fa-book-atlas py-5 md:px-[24px] text-4xl rounded-full bg-white text-[#F20C1F] w-20 h-20 max-md:text-xl max-md:h-11 max-md:w-11 text-center max-md:p-2"
+                ></i>
+              </div>
+              <div
+                class="w-[90%] ml-[5%] mt-5 text-lg text-zinc-700 font-medium outfit"
+              >
+                <p>
+                  Personalized career counseling to guide you in making informed
+                  decisions about your future.
+                </p>
+                <hr class="my-5" />
+
+                <a
+                  href=""
+                  class="text-[#F20C1F] font-bold hover:border-b-2 border-[#F20C1F]"
+                  >Read More ></a
+                >
+              </div>
+            </div>
+
+            <div
+              class="swiper-slide card1 h-auto pb-4 w-full border-[8px] border-white bg-white overflow-hidden"
+            >
+              <div class="image">
+                <div class="service-featured-img">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="/Assets/banners/bg1.jpg"
+                    width="500"
+                    height="300"
+                    alt=""
+                  />
+                </div>
+                <div class="service-featured-img">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="/Assets/banners/bg1.jpg"
+                    width="500"
+                    height="300"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div
+                class="shadow sticky -mt-[40px] rounded-2xl w-[90%] ml-[5%] bg-zinc-100 border-t-[5px] p-4 border-[#F20C1F] flex flex-wrap items-center justify-between z-20 text-black"
+              >
+                <div>
+                  <p class="text-lg">04</p>
+                  <h3 class="text-2xl font-bold max-sm:text-xl">
+                    Helping with IELTS
+                  </h3>
+                </div>
+                <i
+                  class="fa-solid fa-book-atlas py-5 md:px-[24px] text-4xl rounded-full bg-white text-[#F20C1F] w-20 h-20 max-md:text-xl max-md:h-11 max-md:w-11 text-center max-md:p-2"
+                ></i>
+              </div>
+              <div
+                class="w-[90%] ml-[5%] mt-5 text-lg text-zinc-700 font-medium outfit"
+              >
+                <p>
+                  Helping with IELTS to ensure you achieve the scores required
+                  for your immigration process.
+                </p>
+                <hr class="my-5" />
+
+                <a
+                  href=""
+                  class="text-[#F20C1F] font-bold hover:border-b-2 border-[#F20C1F]"
+                  >Read More ></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- why choose us - part-2 -->
+      <section
+        class="lg:sticky lg:w-[90%] lg:ml-[10%] flex lg:-mt-[450px] flex-wrap w-full max-w-screen-2xl mx-auto"
+      >
+        <div class="lg:py-28 p-14 md:w-[44%] text-white why-choose w-full">
+          <h2 class="md:text-5xl text-3xl font-bold mb-9 md:!leading-[1.2]">
+            We Ensure Prompt Services for Visa & Immigration
+          </h2>
+          <div class="flex my-8">
+            <i class="fa-solid fa-earth-asia mr-6 text-5xl"></i>
+            <div class="w-auto">
+              <h3 class="text-xl font-medium mb-1 md:mb-3">
+                Expert Consultants:
+              </h3>
+              <p class="text-lg md:!leading-[1.6]">
+                Our consultants bring extensive knowledge and a track record of
+                success to guide you through every step of the immigration
+                process.
+              </p>
+            </div>
+          </div>
+          <div class="flex my-8">
+            <i class="fa-solid fa-earth-asia mr-6 text-5xl"></i>
+            <div class="w-auto">
+              <h3 class="text-xl font-medium mb-1 md:mb-3">
+                Support Throughout the Process:
+              </h3>
+              <p class="text-lg md:!leading-[1.6]">
+                From initial consultation to final approval, we provide
+                end-to-end support, making the complex immigration journey
+                straightforward and stress-free.
+              </p>
+            </div>
+          </div>
+          <div class="flex my-8">
+            <i class="fa-solid fa-earth-asia mr-6 text-5xl"></i>
+            <div class="w-auto">
+              <h3 class="text-xl font-medium mb-1 md:mb-3">
+                Transparent Practices:
+              </h3>
+              <p class="text-lg md:!leading-[1.6]">
+                We maintain a high success rate by ensuring our clients are
+                well-informed and confident in their decisions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-[56%] lg:py-28 p-11 bg-white w-full">
+          <h3
+            class="relative border-2 border-red-300 p-3 px-6 w-max font-bold transition-all hover:tracking-widest"
+          >
+            WHY &nbsp; CHOOSE &nbsp; US<span
+              class="absolute -top-[16px] left-[42%] text-2xl"
+              ><i
+                class="fa-solid fa-angles-right text-[#F20C1F] !font-extrabold"
+              ></i
+              ><i
+                class="fa-solid fa-angles-right -ml-1 !font-extrabold text-[#F20C1F]"
+              ></i
+            ></span>
+          </h3>
+          <h2 class="md:text-5xl text-3xl my-8 font-bold max-w-[600px]">
+            Best Immigration Consultants
+          </h2>
+          <p class="max-w-[600px] outfit text-lg mb-4">
+            Nationize Visas offers expert guidance, personalized services, and a
+            high success rate, ensuring a seamless immigration experience. Our
+            transparency and ethical practices build trust and reliability with
+            our clients.
+          </p>
+          <div class="max-w-[600px] my-9">
+            <h3 class="text-xl font-bold">
+              Visa Consultancy <span class="float-right font-normal">80%</span>
+            </h3>
+            <div
+              class="h-2 w-full rounded-full overflow-hidden bg-zinc-100 my-4"
+            >
+              <div
+                class="h-full w-[80%] rounded-full overflow-hidden bg-[#F20C1F]"
+              ></div>
+            </div>
+            <h3 class="text-xl font-bold">
+              Visa lorem ipsum <span class="float-right font-normal">60%</span>
+            </h3>
+            <div
+              class="h-2 w-full rounded-full overflow-hidden bg-zinc-100 my-4"
+            >
+              <div
+                class="h-full w-[60%] rounded-full overflow-hidden bg-[#F20C1F]"
+              ></div>
+            </div>
+            <h3 class="text-xl font-bold">
+              Visa lorem ipsum <span class="float-right font-normal">90%</span>
+            </h3>
+            <div
+              class="h-2 w-full rounded-full overflow-hidden bg-zinc-100 my-4"
+            >
+              <div
+                class="h-full w-[90%] rounded-full overflow-hidden bg-[#F20C1F]"
+              ></div>
+            </div>
+          </div>
+          <div class="flex md:mt-7 items-center mt-3 group max-w-[260px]">
+            <img
+              src="Assets/banners/bg-4.jpg"
+              alt=""
+              class="h-20 w-20 mr-4 rounded-full object-cover transition-all group-hover:-scale-x-100"
+            />
+            <div>
+              <h3 class="text-xl font-bold">Amit g. raghav</h3>
+              <p>Founder and maneger</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section 4 -->
+      <section
+        class="w-full md:grid grid-cols-3 gap-5 max-md:space-y-5 max-w-screen-2xl mx-auto px-5 md:px-10 lg:px-32 my-16 md:my-32"
+      >
+        <!-- card 1  -->
+        <div class="relative w-full shadow-xl group overflow-hidden">
+          <div class="flex gap-5 p-5 py-10">
+            <div
+              class="rounded-full bg-white w-min h-min border-2 border-[#F20C1F] border-dotted transition-transform duration-300 group-hover:-scale-x-100 p-5"
+            >
+              <i
+                class="fa-regular fa-paper-plane text-5xl flex-[1] transition-colors duration-300"
+              ></i>
+            </div>
+            <div>
+              <h6
+                class="text-3xl font-bold transition-colors duration-300 group-hover:text-white"
+              >
+                Immigration & Visa Process
+              </h6>
+              <p
+                class="text-zinc-600 transition-colors duration-300 group-hover:text-white"
+              >
+                We strongly support best practice sharing across
+              </p>
+            </div>
+          </div>
+          <!-- animation  -->
+          <div
+            class="absolute inset-0 -z-30 -left-3 w-32 h-full bg-[#F20C1F] -skew-x-[30deg] origin-top-right transition-all duration-300 group-hover:w-[110%] group-hover:skew-x-0"
+          ></div>
+          <div
+            class="absolute inset-0 -z-40 -left-32 w-40 h-full bg-zinc-100 skew-x-[30deg] origin-top-right transition-all duration-300 group-hover:w-full group-hover:skew-x-0"
+          ></div>
+          <div
+            class="absolute inset-0 -z-10 -left-3 w-0 group-hover:w-32 h-full group-hover:bg-red-700 -skew-x-[30deg] origin-top-right transition-all duration-300"
+          ></div>
+          <div
+            class="absolute inset-0 -z-20 -left-32 w-0 group-hover:w-40 h-full group-hover:bg-red-600 skew-x-[30deg] origin-top-right transition-all duration-300"
+          ></div>
+        </div>
+        <!-- card 2  -->
+        <div class="relative w-full shadow-xl group overflow-hidden">
+          <div class="flex gap-5 p-5 py-10">
+            <div
+              class="rounded-full bg-white w-min h-min border-2 border-[#F20C1F] border-dotted transition-transform duration-300 group-hover:-scale-x-100 p-5"
+            >
+              <i
+                class="fa-regular fa-paper-plane text-5xl flex-[1] transition-colors duration-300"
+              ></i>
+            </div>
+            <div>
+              <h6
+                class="text-3xl font-bold transition-colors duration-300 group-hover:text-white"
+              >
+                Immigration & Visa Process
+              </h6>
+              <p
+                class="text-zinc-600 transition-colors duration-300 group-hover:text-white"
+              >
+                We strongly support best practice sharing across
+              </p>
+            </div>
+          </div>
+          <!-- animation  -->
+          <div
+            class="absolute inset-0 -z-30 -left-3 w-32 h-full bg-[#F20C1F] -skew-x-[30deg] origin-top-right transition-all duration-300 group-hover:w-[110%] group-hover:skew-x-0"
+          ></div>
+          <div
+            class="absolute inset-0 -z-40 -left-32 w-40 h-full bg-zinc-100 skew-x-[30deg] origin-top-right transition-all duration-300 group-hover:w-full group-hover:skew-x-0"
+          ></div>
+          <div
+            class="absolute inset-0 -z-10 -left-3 w-0 group-hover:w-32 h-full group-hover:bg-red-700 -skew-x-[30deg] origin-top-right transition-all duration-300"
+          ></div>
+          <div
+            class="absolute inset-0 -z-20 -left-32 w-0 group-hover:w-40 h-full group-hover:bg-red-600 skew-x-[30deg] origin-top-right transition-all duration-300"
+          ></div>
+        </div>
+        <!-- card 2  -->
+        <div class="relative w-full shadow-xl group overflow-hidden">
+          <div class="flex gap-5 p-5 py-10">
+            <div
+              class="rounded-full bg-white w-min h-min border-2 border-[#F20C1F] border-dotted transition-transform duration-300 group-hover:-scale-x-100 p-5"
+            >
+              <i
+                class="fa-regular fa-paper-plane text-5xl flex-[1] transition-colors duration-300"
+              ></i>
+            </div>
+            <div>
+              <h6
+                class="text-3xl font-bold transition-colors duration-300 group-hover:text-white"
+              >
+                Immigration & Visa Process
+              </h6>
+              <p
+                class="text-zinc-600 transition-colors duration-300 group-hover:text-white"
+              >
+                We strongly support best practice sharing across
+              </p>
+            </div>
+          </div>
+          <!-- animation  -->
+          <div
+            class="absolute inset-0 -z-30 -left-3 w-32 h-full bg-[#F20C1F] -skew-x-[30deg] origin-top-right transition-all duration-300 group-hover:w-[110%] group-hover:skew-x-0"
+          ></div>
+          <div
+            class="absolute inset-0 -z-40 -left-32 w-40 h-full bg-zinc-100 skew-x-[30deg] origin-top-right transition-all duration-300 group-hover:w-full group-hover:skew-x-0"
+          ></div>
+          <div
+            class="absolute inset-0 -z-10 -left-3 w-0 group-hover:w-32 h-full group-hover:bg-red-700 -skew-x-[30deg] origin-top-right transition-all duration-300"
+          ></div>
+          <div
+            class="absolute inset-0 -z-20 -left-32 w-0 group-hover:w-40 h-full group-hover:bg-red-600 skew-x-[30deg] origin-top-right transition-all duration-300"
+          ></div>
+        </div>
+      </section>
+      <!-- team member -->
+      <section
+        class="w-full flex flex-col items-center flex-wrap gap-5 max-w-screen-2xl mx-auto px-5 md:px-10 lg:px-32 my-16 lg:my-32"
       >
         <h3
           class="relative border-2 border-zinc-200 p-3 px-6 w-max font-bold transition-all text-sm hover:tracking-widest"
@@ -239,14 +728,16 @@
               alt="John Doe"
             />
             <div
-              class="relative bg-white shadow-lg py-10 group-hover:bg-red-500 group-hover:text-white duration-100 mx-10 -mt-10 z-20"
+              class="relative bg-white shadow-lg py-6 group-hover:bg-[#F20C1F] group-hover:text-white transition-all mx-10 -mt-10 z-20"
             >
               <h3
-                class="pl-5 text-xl font-bold group-hover:text-white border-l-8 border-red-500 group-hover:border-black"
+                class="pl-5 text-xl font-bold group-hover:text-white border-l-8 border-[#F20C1F] group-hover:border-black"
               >
                 John Doe
               </h3>
-              <p class="pl-7 text-zinc-600 group-hover:text-white">
+              <p
+                class="pl-7 text-zinc-600 group-hover:text-white border-l-8 border-[#F20C1F] group-hover:border-black"
+              >
                 Founder & CEO
               </p>
             </div>
@@ -258,14 +749,16 @@
               alt="John Doe"
             />
             <div
-              class="relative bg-white shadow-lg py-10 group-hover:bg-red-500 group-hover:text-white duration-100 mx-10 -mt-10 z-20"
+              class="relative bg-white shadow-lg py-6 group-hover:bg-[#F20C1F] group-hover:text-white transition-all mx-10 -mt-10 z-20"
             >
               <h3
-                class="pl-5 text-xl font-bold group-hover:text-white border-l-8 border-red-500 group-hover:border-black"
+                class="pl-5 text-xl font-bold group-hover:text-white border-l-8 border-[#F20C1F] group-hover:border-black"
               >
                 John Doe
               </h3>
-              <p class="pl-7 text-zinc-600 group-hover:text-white">
+              <p
+                class="pl-7 text-zinc-600 group-hover:text-white border-l-8 border-[#F20C1F] group-hover:border-black"
+              >
                 Founder & CEO
               </p>
             </div>
@@ -277,134 +770,20 @@
               alt="John Doe"
             />
             <div
-              class="relative bg-white shadow-lg py-10 group-hover:bg-red-500 group-hover:text-white duration-100 mx-10 -mt-10 z-20"
+              class="relative bg-white shadow-lg py-6 group-hover:bg-[#F20C1F] group-hover:text-white transition-all mx-10 -mt-10 z-20"
             >
               <h3
-                class="text-xl pl-5 font-bold group-hover:text-white border-l-8 border-red-500 group-hover:border-black"
+                class="text-xl pl-5 font-bold group-hover:text-white border-l-8 border-[#F20C1F] group-hover:border-black"
               >
                 John Doe
               </h3>
-              <p class="pl-7 text-zinc-600 group-hover:text-white">
+              <p
+                class="pl-7 text-zinc-600 group-hover:text-white border-l-8 border-[#F20C1F] group-hover:border-black"
+              >
                 Founder & CEO
               </p>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- section 4 -->
-      <section
-        class="w-full md:grid grid-cols-3 gap-5 max-md:space-y-5 max-w-screen-2xl mx-auto px-5 md:px-10 lg:px-32 my-16 md:my-32"
-      >
-        <!-- card 1  -->
-        <div class="relative w-full shadow-xl group overflow-hidden">
-          <div class="flex gap-5 p-5 py-10">
-            <div
-              class="rounded-full bg-white w-min h-min border-2 border-red-500 border-dotted transition-transform duration-300 group-hover:-scale-x-100 p-5"
-            >
-              <i
-                class="fa-regular fa-paper-plane text-5xl flex-[1] transition-colors duration-300"
-              ></i>
-            </div>
-            <div>
-              <h6
-                class="text-3xl font-bold transition-colors duration-300 group-hover:text-white"
-              >
-                Immigration & Visa Process
-              </h6>
-              <p
-                class="text-zinc-600 transition-colors duration-300 group-hover:text-white"
-              >
-                We strongly support best practice sharing across
-              </p>
-            </div>
-          </div>
-          <!-- animation  -->
-          <div
-            class="absolute inset-0 -z-30 -left-3 w-32 h-full bg-red-500 -skew-x-[30deg] origin-top-right transition-all duration-300 group-hover:w-[110%] group-hover:skew-x-0"
-          ></div>
-          <div
-            class="absolute inset-0 -z-40 -left-32 w-40 h-full bg-zinc-100 skew-x-[30deg] origin-top-right transition-all duration-300 group-hover:w-full group-hover:skew-x-0"
-          ></div>
-          <div
-            class="absolute inset-0 -z-10 -left-3 w-0 group-hover:w-32 h-full group-hover:bg-red-700 -skew-x-[30deg] origin-top-right transition-all duration-300"
-          ></div>
-          <div
-            class="absolute inset-0 -z-20 -left-32 w-0 group-hover:w-40 h-full group-hover:bg-red-600 skew-x-[30deg] origin-top-right transition-all duration-300"
-          ></div>
-        </div>
-        <!-- card 2  -->
-        <div class="relative w-full shadow-xl group overflow-hidden">
-          <div class="flex gap-5 p-5 py-10">
-            <div
-              class="rounded-full bg-white w-min h-min border-2 border-red-500 border-dotted transition-transform duration-300 group-hover:-scale-x-100 p-5"
-            >
-              <i
-                class="fa-regular fa-paper-plane text-5xl flex-[1] transition-colors duration-300"
-              ></i>
-            </div>
-            <div>
-              <h6
-                class="text-3xl font-bold transition-colors duration-300 group-hover:text-white"
-              >
-                Immigration & Visa Process
-              </h6>
-              <p
-                class="text-zinc-600 transition-colors duration-300 group-hover:text-white"
-              >
-                We strongly support best practice sharing across
-              </p>
-            </div>
-          </div>
-          <!-- animation  -->
-          <div
-            class="absolute inset-0 -z-30 -left-3 w-32 h-full bg-red-500 -skew-x-[30deg] origin-top-right transition-all duration-300 group-hover:w-[110%] group-hover:skew-x-0"
-          ></div>
-          <div
-            class="absolute inset-0 -z-40 -left-32 w-40 h-full bg-zinc-100 skew-x-[30deg] origin-top-right transition-all duration-300 group-hover:w-full group-hover:skew-x-0"
-          ></div>
-          <div
-            class="absolute inset-0 -z-10 -left-3 w-0 group-hover:w-32 h-full group-hover:bg-red-700 -skew-x-[30deg] origin-top-right transition-all duration-300"
-          ></div>
-          <div
-            class="absolute inset-0 -z-20 -left-32 w-0 group-hover:w-40 h-full group-hover:bg-red-600 skew-x-[30deg] origin-top-right transition-all duration-300"
-          ></div>
-        </div>
-        <!-- card 2  -->
-        <div class="relative w-full shadow-xl group overflow-hidden">
-          <div class="flex gap-5 p-5 py-10">
-            <div
-              class="rounded-full bg-white w-min h-min border-2 border-red-500 border-dotted transition-transform duration-300 group-hover:-scale-x-100 p-5"
-            >
-              <i
-                class="fa-regular fa-paper-plane text-5xl flex-[1] transition-colors duration-300"
-              ></i>
-            </div>
-            <div>
-              <h6
-                class="text-3xl font-bold transition-colors duration-300 group-hover:text-white"
-              >
-                Immigration & Visa Process
-              </h6>
-              <p
-                class="text-zinc-600 transition-colors duration-300 group-hover:text-white"
-              >
-                We strongly support best practice sharing across
-              </p>
-            </div>
-          </div>
-          <!-- animation  -->
-          <div
-            class="absolute inset-0 -z-30 -left-3 w-32 h-full bg-red-500 -skew-x-[30deg] origin-top-right transition-all duration-300 group-hover:w-[110%] group-hover:skew-x-0"
-          ></div>
-          <div
-            class="absolute inset-0 -z-40 -left-32 w-40 h-full bg-zinc-100 skew-x-[30deg] origin-top-right transition-all duration-300 group-hover:w-full group-hover:skew-x-0"
-          ></div>
-          <div
-            class="absolute inset-0 -z-10 -left-3 w-0 group-hover:w-32 h-full group-hover:bg-red-700 -skew-x-[30deg] origin-top-right transition-all duration-300"
-          ></div>
-          <div
-            class="absolute inset-0 -z-20 -left-32 w-0 group-hover:w-40 h-full group-hover:bg-red-600 skew-x-[30deg] origin-top-right transition-all duration-300"
-          ></div>
         </div>
       </section>
     </main>

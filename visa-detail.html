@@ -14,7 +14,7 @@
   </head>
 
   <body x-data class="bg-zinc-100">
-    <main class="">
+    <main>
       <!-- banner  -->
       <section class="relative h-full w-full text-white">
         <img
@@ -44,15 +44,17 @@
               class="w-full max-h-[28rem] object-center object-cover"
               alt="banner"
             />
-            <h2 class="text-3xl font-bold">Visa Overview</h2>
-            <p class="text-zinc-800">
-              Ultrices conubia vehicula malesuada. Eros commodo a duis accumsan
-              vestibulum adipiscing hendrerit lobortis viverra non justo semper
-              semper rutrum ad risus felis eros. Cursus libero viverra tempus
-              netus diam Semper est cursus viverra lectus nibh Eros commodo a
-              duis accumsan vestibulum adipiscing hendrerit adipiscing libero
-              viverra tempus augue ligula
-            </p>
+            <div class="space-y-5">
+              <h2 class="text-3xl font-bold">Visa Overview</h2>
+              <p class="text-zinc-800">
+                Ultrices conubia vehicula malesuada. Eros commodo a duis
+                accumsan vestibulum adipiscing hendrerit lobortis viverra non
+                justo semper semper rutrum ad risus felis eros. Cursus libero
+                viverra tempus netus diam Semper est cursus viverra lectus nibh
+                Eros commodo a duis accumsan vestibulum adipiscing hendrerit
+                adipiscing libero viverra tempus augue ligula
+              </p>
+            </div>
             <!-- cards  -->
             <div class="sm:grid grid-cols-2 gap-5 max-sm:space-y-5">
               <!-- card 1  -->
@@ -60,13 +62,13 @@
                 class="flex bg-black justify-center group relative text-white duration-300"
               >
                 <div
-                  class="absolute z-0 inset-0 w-0 mx-auto group-hover:w-full bg-red-500 duration-300"
+                  class="absolute z-0 inset-0 w-0 mx-auto group-hover:w-full bg-[#F20C1F] duration-300"
                 ></div>
                 <div
-                  class="rounded-full p-5 bg-red-500 group-hover:bg-white border-2 border-red-500 absolute right-24 bottom-full translate-y-1/2 group-hover:-scale-x-100 duration-300"
+                  class="rounded-full p-5 bg-[#F20C1F] group-hover:bg-white border-2 border-[#F20C1F] absolute right-24 bottom-full translate-y-1/2 group-hover:-scale-x-100 duration-300"
                 >
                   <i
-                    class="fa-solid fa-helicopter text-3xl group-hover:text-red-500"
+                    class="fa-solid fa-helicopter text-3xl group-hover:text-[#F20C1F]"
                   ></i>
                 </div>
                 <div class="z-10 p-5 space-y-5">
@@ -85,13 +87,13 @@
                 class="flex bg-black justify-center group relative text-white duration-300"
               >
                 <div
-                  class="absolute z-0 inset-0 w-0 mx-auto group-hover:w-full bg-red-500 duration-300"
+                  class="absolute z-0 inset-0 w-0 mx-auto group-hover:w-full bg-[#F20C1F] duration-300"
                 ></div>
                 <div
-                  class="rounded-full p-5 bg-red-500 group-hover:bg-white border-2 border-red-500 absolute right-24 bottom-full translate-y-1/2 group-hover:-scale-x-100 duration-300"
+                  class="rounded-full p-5 bg-[#F20C1F] group-hover:bg-white border-2 border-[#F20C1F] absolute right-24 bottom-full translate-y-1/2 group-hover:-scale-x-100 duration-300"
                 >
                   <i
-                    class="fa-solid fa-plane-circle-check text-3xl group-hover:text-red-500"
+                    class="fa-solid fa-plane-circle-check text-3xl group-hover:text-[#F20C1F]"
                   ></i>
                 </div>
                 <div class="z-10 p-5 space-y-5">
@@ -140,59 +142,84 @@
               </div>
             </div>
             <!-- FAQ  -->
-             <div class="space-y-5">
+            <div class="space-y-5">
               <h4 class="text-3xl font-bold">Frequently Asked Questions</h4>
-              <p class="text-zinc-800">Ultrices conubia vehicula malesuada. Eros commodo a duis accumsan vestibulum adipiscing hendrerit lobortis viverra non justo semper non rutrum augue Ultrices conubia vehicula malesuada. Eros commodo a duis accumsan vestibulum adipiscing hendrerit lobortis viverra</p>
-             </div>
-             <div class="faq wow animate__animated animate__fadeInRight animate__slower" data-wow-delay="0.4s">
+              <p class="text-zinc-800">
+                Ultrices conubia vehicula malesuada. Eros commodo a duis
+                accumsan vestibulum adipiscing hendrerit lobortis viverra non
+                justo semper non rutrum augue Ultrices conubia vehicula
+                malesuada. Eros commodo a duis accumsan vestibulum adipiscing
+                hendrerit lobortis viverra
+              </p>
+            </div>
+            <div
+              class="faq wow animate__animated animate__fadeInRight animate__slower"
+              data-wow-delay="0.4s"
+            >
               <div class="active faq-item p-4 mb-3 shadow-xl">
-                <div class="question ">
-                  <h3 class="text-xl font-bold"> Arrival Port Blair + Half Day</h3>
+                <div class="question">
+                  <h3 class="text-xl font-bold">
+                    Arrival Port Blair + Half Day
+                  </h3>
                   <i class="fa-solid fa-circle-chevron-down"></i>
                 </div>
                 <div class="answer">
-                  <hr class="my-3">
-                  On arrival at Port Blair airport, you will be met and transferred to your hotel, Check in make
-                  yourself comfortable, After freshen Up proceed to the very first beach the Corbyn’s Cove Beach
-                  for swimming and beach activity which is 10 km away from Port Blair City on the way visit
-                  science Museum, then visit cellular jail ( Cellular jail closed on Monday & on all Govt.
-                  holidays ).Enjoy the Son et Lumen-ere show at Cellular Jail. Return back to your hotel evening
-                  free for own activity, Overnight stay at hotel. <br>
+                  <hr class="my-3" />
+                  On arrival at Port Blair airport, you will be met and
+                  transferred to your hotel, Check in make yourself comfortable,
+                  After freshen Up proceed to the very first beach the Corbyn’s
+                  Cove Beach for swimming and beach activity which is 10 km away
+                  from Port Blair City on the way visit science Museum, then
+                  visit cellular jail ( Cellular jail closed on Monday & on all
+                  Govt. holidays ).Enjoy the Son et Lumen-ere show at Cellular
+                  Jail. Return back to your hotel evening free for own activity,
+                  Overnight stay at hotel. <br />
                 </div>
               </div>
               <div class="faq-item p-4 mb-3 shadow-xl">
                 <div class="question">
-                  <h3 class="text-xl font-bold"> Arrival Port Blair + Half Day</h3>
-                  <i class="fa-solid fa-circle-chevron-down"></i>
-                </div>
-                <div class="answer ">
-                  <hr class="my-3">
-                  On arrival at Port Blair airport, you will be met and transferred to your hotel, Check in make
-                  yourself comfortable, After freshen Up proceed to the very first beach the Corbyn’s Cove Beach
-                  for swimming and beach activity which is 10 km away from Port Blair City on the way visit
-                  science Museum, then visit cellular jail ( Cellular jail closed on Monday & on all Govt.
-                  holidays ).Enjoy the Son et Lumen-ere show at Cellular Jail. Return back to your hotel evening
-                  free for own activity, Overnight stay at hotel. <br>
-                </div>
-              </div>
-              <div class="faq-item p-4 mb-3 shadow-xl">
-                <div class="question ">
-                  <h3 class="text-xl font-bold"> Arrival Port Blair + Half Day</h3>
+                  <h3 class="text-xl font-bold">
+                    Arrival Port Blair + Half Day
+                  </h3>
                   <i class="fa-solid fa-circle-chevron-down"></i>
                 </div>
                 <div class="answer">
-                  <hr class="my-3">
-                  On arrival at Port Blair airport, you will be met and transferred to your hotel, Check in make
-                  yourself comfortable, After freshen Up proceed to the very first beach the Corbyn’s Cove Beach
-                  for swimming and beach activity which is 10 km away from Port Blair City on the way visit
-                  science Museum, then visit cellular jail ( Cellular jail closed on Monday & on all Govt.
-                  holidays ).Enjoy the Son et Lumen-ere show at Cellular Jail. Return back to your hotel evening
-                  free for own activity, Overnight stay at hotel. <br>
+                  <hr class="my-3" />
+                  On arrival at Port Blair airport, you will be met and
+                  transferred to your hotel, Check in make yourself comfortable,
+                  After freshen Up proceed to the very first beach the Corbyn’s
+                  Cove Beach for swimming and beach activity which is 10 km away
+                  from Port Blair City on the way visit science Museum, then
+                  visit cellular jail ( Cellular jail closed on Monday & on all
+                  Govt. holidays ).Enjoy the Son et Lumen-ere show at Cellular
+                  Jail. Return back to your hotel evening free for own activity,
+                  Overnight stay at hotel. <br />
+                </div>
+              </div>
+              <div class="faq-item p-4 mb-3 shadow-xl">
+                <div class="question">
+                  <h3 class="text-xl font-bold">
+                    Arrival Port Blair + Half Day
+                  </h3>
+                  <i class="fa-solid fa-circle-chevron-down"></i>
+                </div>
+                <div class="answer">
+                  <hr class="my-3" />
+                  On arrival at Port Blair airport, you will be met and
+                  transferred to your hotel, Check in make yourself comfortable,
+                  After freshen Up proceed to the very first beach the Corbyn’s
+                  Cove Beach for swimming and beach activity which is 10 km away
+                  from Port Blair City on the way visit science Museum, then
+                  visit cellular jail ( Cellular jail closed on Monday & on all
+                  Govt. holidays ).Enjoy the Son et Lumen-ere show at Cellular
+                  Jail. Return back to your hotel evening free for own activity,
+                  Overnight stay at hotel. <br />
                 </div>
               </div>
             </div>
           </article>
           <aside class="col-span-2 w-full sticky top-0">
+            <!-- aside Navigation  -->
             <div class="space-y-3 text-xl font-bold">
               <a href="#" class="group bg-white flex items-center">
                 <p
@@ -200,7 +227,7 @@
                 >
                   &gt;
                 </p>
-                <p class="w-full p-5 bg-red-500 transition-all duration-300">
+                <p class="w-full p-5 bg-[#F20C1F] transition-all duration-300">
                   Canada Visa
                 </p>
               </a>
@@ -211,19 +238,7 @@
                   &gt;
                 </p>
                 <p
-                  class="w-full p-5 group-hover:bg-red-500 transition-all duration-300"
-                >
-                  Canada Visa
-                </p>
-              </a>
-              <a href="#" class="group bg-white flex items-center">
-                <p
-                  class="bg-zinc-400 group-hover:bg-black py-5 p-2 w-min group-hover:text-white transition-all duration-300"
-                >
-                  &gt;
-                </p>
-                <p
-                  class="w-full p-5 group-hover:bg-red-500 transition-all duration-300"
+                  class="w-full p-5 group-hover:bg-[#F20C1F] transition-all duration-300"
                 >
                   Canada Visa
                 </p>
@@ -235,12 +250,28 @@
                   &gt;
                 </p>
                 <p
-                  class="w-full p-5 group-hover:bg-red-500 transition-all duration-300"
+                  class="w-full p-5 group-hover:bg-[#F20C1F] transition-all duration-300"
+                >
+                  Canada Visa
+                </p>
+              </a>
+              <a href="#" class="group bg-white flex items-center">
+                <p
+                  class="bg-zinc-400 group-hover:bg-black py-5 p-2 w-min group-hover:text-white transition-all duration-300"
+                >
+                  &gt;
+                </p>
+                <p
+                  class="w-full p-5 group-hover:bg-[#F20C1F] transition-all duration-300"
                 >
                   Canada Visa
                 </p>
               </a>
             </div>
+            <!-- Aside Banner  -->
+             <div class="w-full">
+               <img src="Assets/visa/download.jpg" class="w-full h-full object-cover" alt="visa-banner">
+             </div>
           </aside>
         </div>
       </section>
