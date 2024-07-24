@@ -282,11 +282,16 @@ margin-left: 13px;              transition: transform 0.5s;
   }
   .test::before{
     background-color: white;
-    bottom: 99.92%;
+    bottom: 99%;
     clip-path: polygon(50% 100%, 100% 0, 100% 100%, 0 100%, 0 0);
     content: "";
-    height: 60px;
+    height: 70px;
     left: 0;
+    z-index: 1;
     position: absolute;
     width: 100%;
+  }
+
+  .scale{
+    object-fit: 130%;
   }

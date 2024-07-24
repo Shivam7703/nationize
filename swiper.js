@@ -35,18 +35,6 @@ const swiper2 = new Swiper('.swiper2', {
         spaceBetween: 30
       }
     },
-    // pagination: {
-    //     el: '.swiper-pagination',
-    // },
-
-    // navigation: {
-    //     nextEl: '#slide-prev1',
-    //     prevEl: '#slide-next1',
-    // },
-
-    // scrollbar: {
-    //     el: '.swiper-scrollbar',
-    // },
 });
 const swiper3 = new Swiper('.swiper3', {
     // Optional parameters
@@ -83,4 +71,39 @@ const swiper3 = new Swiper('.swiper3', {
     // scrollbar: {
     //     el: '.swiper-scrollbar',
     // },
+});
+
+const swiper4 = new Swiper('.swiper4', {
+  // Optional parameters
+  loop: true,
+  autoplay: {
+      delay: 2500,
+  },
+   speed: 400,
+  slidesPerView: 1,
+  spaceBetween: 10,
+  breakpoints: {
+    100: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    },
+    580: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+   1230: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    }
+  },
+  // pagination: {
+  //     el: '.swiper-pagination',
+  // },
+  navigation: {
+      nextEl: '#slide-prev3',
+      prevEl: '#slide-next3',
+  },
+  // scrollbar: {
+  //     el: '.swiper-scrollbar',
+  // },
 });
