@@ -27,7 +27,7 @@
     />
   </head>
 
-  <body x-data class="bg-zinc-100">
+  <body x-data>
     <main>
       <!-- banner  -->
       <section class="relative h-full w-full text-white">
@@ -40,11 +40,11 @@
           class="absolute inset-0 w-full h-full bg-[linear-gradient(230deg,#e71800_0%,#000_55%)] opacity-80"
         ></div>
         <div
-          class="absolute inset-0 flex flex-col gap-5 items-center justify-center w-full h-full"
+          class="absolute inset-0 flex flex-col gap-5 items-center justify-center w-full h-full text-center"
         >
-          <h2 class="text-5xl font-bold">Canada Visa</h2>
+          <h2 class="text-5xl font-bold">Coaching Details</h2>
 
-          <p><a href="/">Home</a> &#62; Canada Visa</p>
+          <p><a href="/">Home</a> &#62; Coaching Details</p>
         </div>
       </section>
       <!-- section 1  -->
@@ -235,54 +235,141 @@
             </div>
           </article>
           <aside class="col-span-4 space-y-5 w-full sm:sticky top-0 h-full">
-            <!-- aside Navigation  -->
-            <div class="space-y-3 text-xl font-bold">
-              <a href="#" class="group bg-white flex items-center">
-                <p
-                  class="bg-black py-5 p-2 w-min text-white transition-all duration-300"
+            <!-- aside Form  -->
+            <div class="w-full bg-gray-100 rounded-md p-5 md:p-10">
+              <h6 class="text-xl font-bold mb-3">Talk To Our Expert</h6>
+              <div class="w-full h-[3px] bg-zinc-200 mb-5 rounded-xl">
+                <div class="w-16 h-full bg-[#F20C1F] rounded-xl"></div>
+              </div>
+              <form action="" class="space-y-3">
+                <div class="relative w-full min-w-[200px] h-10">
+                  <input
+                    id="name"
+                    name="name"
+                    class="peer w-full h-full bg-zinc-100 text-blue-gray-700 font-sans font-normal outline outline-0 focus:outline-0 disabled:bg-blue-gray-50 disabled:border-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 border-[#F20C1F] focus:border-t-transparent text-sm px-3 py-2.5 rounded-[7px] focus:border-[#F20C1F]"
+                    placeholder=" "
+                  /><label
+                    class="flex w-full h-full select-none pointer-events-none absolute left-0 font-normal !overflow-visible truncate peer-placeholder-shown:text-blue-gray-500 leading-tight peer-focus:leading-tight peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500 transition-all -top-1.5 peer-placeholder-shown:text-sm text-[11px] peer-focus:text-[11px] before:content[' '] before:block before:box-border before:w-2.5 before:h-1.5 before:mt-[6.5px] before:mr-1 peer-placeholder-shown:before:border-transparent before:rounded-tl-md before:border-t peer-focus:before:border-t-2 before:border-l peer-focus:before:border-l-2 before:pointer-events-none before:transition-all peer-disabled:before:border-transparent after:content[' '] after:block after:flex-grow after:box-border after:w-2.5 after:h-1.5 after:mt-[6.5px] after:ml-1 peer-placeholder-shown:after:border-transparent after:rounded-tr-md after:border-t peer-focus:after:border-t-2 after:border-r peer-focus:after:border-r-2 after:pointer-events-none after:transition-all peer-disabled:after:border-transparent peer-placeholder-shown:leading-[3.75] text-gray-500 peer-focus:text-gray-900 before:border-blue-gray-200 peer-focus:before:!border-[#F20C1F] after:border-blue-gray-200 peer-focus:after:!border-[#F20C1F]"
+                    >Your Name
+                  </label>
+                </div>
+                <div class="relative w-full min-w-[200px] h-10">
+                  <input
+                    id="email"
+                    name="email"
+                    class="peer w-full h-full bg-zinc-100 text-blue-gray-700 font-sans font-normal outline outline-0 focus:outline-0 disabled:bg-blue-gray-50 disabled:border-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 border-[#F20C1F] focus:border-t-transparent text-sm px-3 py-2.5 rounded-[7px] focus:border-[#F20C1F]"
+                    placeholder=" "
+                  /><label
+                    class="flex w-full h-full select-none pointer-events-none absolute left-0 font-normal !overflow-visible truncate peer-placeholder-shown:text-blue-gray-500 leading-tight peer-focus:leading-tight peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500 transition-all -top-1.5 peer-placeholder-shown:text-sm text-[11px] peer-focus:text-[11px] before:content[' '] before:block before:box-border before:w-2.5 before:h-1.5 before:mt-[6.5px] before:mr-1 peer-placeholder-shown:before:border-transparent before:rounded-tl-md before:border-t peer-focus:before:border-t-2 before:border-l peer-focus:before:border-l-2 before:pointer-events-none before:transition-all peer-disabled:before:border-transparent after:content[' '] after:block after:flex-grow after:box-border after:w-2.5 after:h-1.5 after:mt-[6.5px] after:ml-1 peer-placeholder-shown:after:border-transparent after:rounded-tr-md after:border-t peer-focus:after:border-t-2 after:border-r peer-focus:after:border-r-2 after:pointer-events-none after:transition-all peer-disabled:after:border-transparent peer-placeholder-shown:leading-[3.75] text-gray-500 peer-focus:text-gray-900 before:border-blue-gray-200 peer-focus:before:!border-[#F20C1F] after:border-blue-gray-200 peer-focus:after:!border-[#F20C1F]"
+                    >Enter Email
+                  </label>
+                </div>
+                <div class="relative w-full min-w-[200px]">
+                  <textarea
+                    name="message"
+                    id="message"
+                    class="peer w-full h-full min-h-[100px] bg-zinc-100 text-blue-gray-700 font-sans font-normal outline outline-0 focus:outline-0 disabled:bg-blue-gray-50 disabled:border-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 border focus:border-2 border-[#F20C1F] focus:border-t-transparent text-sm px-3 py-2.5 rounded-[7px] focus:border-[#F20C1F]"
+                    placeholder=" "
+                  ></textarea>
+                  <label
+                    class="flex w-full h-full select-none pointer-events-none absolute left-0 font-normal !overflow-visible truncate peer-placeholder-shown:text-blue-gray-500 leading-tight peer-focus:leading-tight peer-disabled:text-transparent peer-disabled:peer-placeholder-shown:text-blue-gray-500 transition-all -top-1.5 peer-placeholder-shown:text-sm text-[11px] peer-focus:text-[11px] before:content[' '] before:block before:box-border before:w-2.5 before:h-1.5 before:mt-[6.5px] before:mr-1 peer-placeholder-shown:before:border-transparent before:rounded-tl-md before:border-t peer-focus:before:border-t-2 before:border-l peer-focus:before:border-l-2 before:pointer-events-none before:transition-all peer-disabled:before:border-transparent after:content[' '] after:block after:flex-grow after:box-border after:w-2.5 after:h-1.5 after:mt-[6.5px] after:ml-1 peer-placeholder-shown:after:border-transparent after:rounded-tr-md after:border-t peer-focus:after:border-t-2 after:border-r peer-focus:after:border-r-2 after:pointer-events-none after:transition-all peer-disabled:after:border-transparent peer-placeholder-shown:leading-[3.75] text-gray-500 peer-focus:text-gray-900 before:border-blue-gray-200 peer-focus:before:!border-[#F20C1F] after:border-blue-gray-200 peer-focus:after:!border-[#F20C1F]"
+                  >
+                    Message
+                  </label>
+                </div>
+                <button
+                  type="submit"
+                  class="px-8 py-3 overflow-hidden group bg-black relative hover:bg-[#F20C1F] text-white transition-all ease-out duration-300"
                 >
-                  &gt;
-                </p>
-                <p class="w-full p-5 bg-[#F20C1F] transition-all duration-300">
-                  Canada Visa
-                </p>
-              </a>
-              <a href="#" class="group bg-white flex items-center">
-                <p
-                  class="bg-zinc-400 group-hover:bg-black py-5 p-2 w-min group-hover:text-white transition-all duration-300"
+                  <span
+                    class="absolute right-0 w-10 h-full top-0 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 -skew-x-12 group-hover:-translate-x-36 ease"
+                  ></span>
+                  <span class="relative font-semibold">SEND MESSAGE</span>
+                </button>
+              </form>
+            </div>
+            <!-- aside Countries  -->
+            <div class="w-full bg-gray-100 rounded-md p-5 md:p-10">
+              <h6 class="text-xl font-bold mb-3">Countries</h6>
+              <div class="w-full h-[3px] bg-zinc-200 mb-5 rounded-xl">
+                <div class="w-16 h-full bg-[#F20C1F] rounded-xl"></div>
+              </div>
+              <div class="space-y-3 flex flex-col">
+                <a href="#" class="text-zinc-600 hover:text-[#F20C1F] space-x-3"
+                  ><span class="text-[#F20C1F] font-bold">🗁</span>
+                  <span>Canada</span></a
                 >
-                  &gt;
-                </p>
-                <p
-                  class="w-full p-5 group-hover:bg-[#F20C1F] transition-all duration-300"
+                <a href="#" class="text-zinc-600 hover:text-[#F20C1F] space-x-3"
+                  ><span class="text-[#F20C1F] font-bold">🗁</span>
+                  <span>Australia</span></a
                 >
-                  Canada Visa
-                </p>
-              </a>
-              <a href="#" class="group bg-white flex items-center">
-                <p
-                  class="bg-zinc-400 group-hover:bg-black py-5 p-2 w-min group-hover:text-white transition-all duration-300"
+                <a href="#" class="text-zinc-600 hover:text-[#F20C1F] space-x-3"
+                  ><span class="text-[#F20C1F] font-bold">🗁</span>
+                  <span>Germany</span></a
                 >
-                  &gt;
-                </p>
-                <p
-                  class="w-full p-5 group-hover:bg-[#F20C1F] transition-all duration-300"
+                <a href="#" class="text-zinc-600 hover:text-[#F20C1F] space-x-3"
+                  ><span class="text-[#F20C1F] font-bold">🗁</span>
+                  <span>UK</span></a
                 >
-                  Canada Visa
-                </p>
-              </a>
-              <a href="#" class="group bg-white flex items-center">
-                <p
-                  class="bg-zinc-400 group-hover:bg-black py-5 p-2 w-min group-hover:text-white transition-all duration-300"
+                <a href="#" class="text-zinc-600 hover:text-[#F20C1F] space-x-3"
+                  ><span class="text-[#F20C1F] font-bold">🗁</span>
+                  <span>Dubai</span></a
                 >
-                  &gt;
-                </p>
-                <p
-                  class="w-full p-5 group-hover:bg-[#F20C1F] transition-all duration-300"
+                <a href="#" class="text-zinc-600 hover:text-[#F20C1F] space-x-3"
+                  ><span class="text-[#F20C1F] font-bold">🗁</span>
+                  <span>Singapore</span></a
                 >
-                  Canada Visa
-                </p>
-              </a>
+              </div>
+            </div>
+            <!-- aside Visas We Offer  -->
+            <div class="w-full bg-gray-100 rounded-md p-5 md:p-10">
+              <h6 class="text-xl font-bold mb-3">Visas We Offer</h6>
+              <div class="w-full h-[3px] bg-zinc-200 mb-5 rounded-xl">
+                <div class="w-16 h-full bg-[#F20C1F] rounded-xl"></div>
+              </div>
+              <div class="space-y-3 flex flex-col">
+                <a href="#" class="text-zinc-600 hover:text-[#F20C1F] space-x-3"
+                  ><span class="text-[#F20C1F] font-bold">🗁</span>
+                  <span>Permanent Residency Visa</span></a
+                >
+                <a href="#" class="text-zinc-600 hover:text-[#F20C1F] space-x-3"
+                  ><span class="text-[#F20C1F] font-bold">🗁</span>
+                  <span>Work Permit Visa</span></a
+                >
+                <a href="#" class="text-zinc-600 hover:text-[#F20C1F] space-x-3"
+                  ><span class="text-[#F20C1F] font-bold">🗁</span>
+                  <span>Study Visa</span></a
+                >
+                <a href="#" class="text-zinc-600 hover:text-[#F20C1F] space-x-3"
+                  ><span class="text-[#F20C1F] font-bold">🗁</span>
+                  <span>Tourist Visa </span></a
+                >
+              </div>
+            </div>
+            <!-- aside Latest Blogs  -->
+            <div class="w-full bg-gray-100 rounded-md p-5 md:p-10">
+              <h6 class="text-xl font-bold mb-3">Latest Blogs</h6>
+              <div class="w-full h-[3px] bg-zinc-200 mb-5 rounded-xl">
+                <div class="w-16 h-full bg-[#F20C1F] rounded-xl"></div>
+              </div>
+              <div class="space-y-3 flex flex-col">
+                <a href="#" class="text-zinc-600 hover:text-[#F20C1F] space-x-3"
+                  ><span class="text-[#F20C1F] font-bold">🗁</span>
+                  <span>Blog 1</span></a
+                >
+                <a href="#" class="text-zinc-600 hover:text-[#F20C1F] space-x-3"
+                  ><span class="text-[#F20C1F] font-bold">🗁</span>
+                  <span>Blog 1</span></a
+                >
+                <a href="#" class="text-zinc-600 hover:text-[#F20C1F] space-x-3"
+                  ><span class="text-[#F20C1F] font-bold">🗁</span>
+                  <span>Blog 1</span></a
+                >
+                <a href="#" class="text-zinc-600 hover:text-[#F20C1F] space-x-3"
+                  ><span class="text-[#F20C1F] font-bold">🗁</span>
+                  <span>Blog 1 </span></a
+                >
+              </div>
             </div>
             <!-- Aside Banner  -->
             <div class="w-full relative max-md:hidden">
