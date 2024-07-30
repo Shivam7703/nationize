@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nationize</title>
+  <link rel="stylesheet" href="/src/header.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://kit.fontawesome.com/4d509971f0.js" crossorigin="anonymous"></script>
+  <script src="tailwind.js"></script>
+  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <link rel="stylesheet" href="./src/index.css">
+  <link rel="stylesheet" href="./header.css">
+</head>
+
+<body x-data class="h-screen bg-zinc-500">
+  <header class="flex flex-row max-md:hidden">
+    <div class="bg-white p-4 flex justify-center items-center">
+        <img src="Assets/logo1.png" class="lg:w-[350px] h-auto md:w-[300px] min-w-[190px]" alt="">
+    </div>
+    <div class="w-full">
+      <div class="flex justify-between bg-[#F20C1F] w-full p-4 px-11 text-white items-center">
+        <div class="flex gap-7 text-white text-xl"><a href=""><i
+              class="fa-brands hover:text-black transition-all fa-x-twitter"></i></a> <a href=""><i
+              class="fa-brands hover:text-black transition-all fa-facebook-f"></i></a><a href=""><i
+              class="fa-brands hover:text-black transition-all fa-instagram"></i></a>
+          <a href=""><i class="fa-brands hover:text-black transition-all fa-linkedin-in"></i></a>
+        </div>
+        <ul class="flex gap-7 !text-[16px] items-center">
+          <a href="construction.html">
+            <li class="hover:border-b transition-all border-white ">About Us</li>
+          </a><a href="construction.html">
+            <li class="hover:border-b transition-all border-white ">Our Services</li>
+          </a><a href="construction.html">
+            <li class="hover:border-b transition-all border-white ">News</li>
+          </a><a href="construction.html">
+            <li class="hover:border-b transition-all border-white ">Coaching</li>
+          </a><a href="construction.html">
+            <li class="hover:border-b transition-all border-white ">Blogs</li>
+          </a>
+          </a><a href="construction.html">
+            <li class="hover:border-b transition-all border-white ">Contact Us</li>
+          </a>
+          <a href="construction.html"><button class="contact-btn text-lg shadow pr-6 text-black flex items-center"> <i
+                class=" fa-solid fa-phone  mr-2 bg-[#F20C1F] rounded-full text-white p-3"></i>
+              <p class="leading-5 text-left text-[16px]">Call Anytime <br> +91000008998 </p>
+            </button></a>
+        </ul>
+      </div>
+      <nav class="nav-main">
+        <ul class="nav-list">
+          <li class="nav-item main" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+            <a href="construction.html" @click.prevent="open = !open">Canada </a>
+            <ul x-show="open" x-transition:enter="submenu-enter" x-transition:leave="submenu-leave" class="submenu">
+              <li><a href="construction.html">Canada Permanent Residency Visa</a></li>
+              <li><a href="construction.html">Canada Express Entry</a></li>
+              <li><a href="construction.html">Canada Family Sponsorship</a></li>
+
+              <!-- Add other submenu items here -->
+              <li class="nav-item" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+                <a href="construction.html" @click.prevent="open = !open">Provincial Nominee Program (PNP) <i
+                    class="fa-solid fa-angle-right float-right ml-3"></i></a>
+                <ul x-show="open" x-transition:enter="submenu-enter" x-transition:leave="submenu-leave"
+                  class="submenu-nested">
+                  <li><a href="construction.html">Manitoba PNP</a></li>
+                  <li><a href="construction.html">Yukon Nominee Program</a></li>
+                  <li><a href="construction.html">Ontario PNP Program</a></li>
+                  <li><a href="construction.html">Noca Scotia PNP</a></li>
+                  <li><a href="construction.html">Alberta PNP Program</a></li>
+                  <li><a href="construction.html">British Columbia PNP Program</a></li>
+                  <li><a href="construction.html">Quebec Skilled Worker Program</a></li>
+                  <li><a href="construction.html">Saskatchewan PNP</a></li>
+                  <li><a href="construction.html">New Brunswick PNP Program</a></li>
+                  <li><a href="construction.html">Atlantic Immigration Program</a></li>
+                  <li><a href="construction.html">PEI PNP Program</a></li>
+                  <li><a href="construction.html">NL PNP Program</a></li>
+                  <!-- Add other PNP submenu items here -->
+                </ul>
+              </li>
+              <li><a href="construction.html">Atlantic Immigration Pilot</a></li>
+              <li><a href="construction.html">Canada Business Visa</a></li>
+              <li><a href="construction.html">Self-employed Persons Program</a></li>
+              <li><a href="construction.html">Caregivers</a></li>
+              <li><a href="construction.html">Rural and Northern Immigration Pilot</a></li>
+              <li><a href="construction.html">Canada Agri-Food Pilot</a></li>
+              <li><a href="construction.html">Canada Refugees and Asylum</a></li>
+            </ul>
+          </li>
+
+
+          <!-- 2nd -->
+          <li class="nav-item main" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+            <a href="construction.html" @click.prevent="open = !open">Australia </a>
+            <ul x-show="open" x-transition:enter="submenu-enter" x-transition:leave="submenu-leave" class="submenu">
+              <li><a href="construction.html">Australia Permanent Residency Visa</a></li>
+              <li><a href="construction.html">Australia Skilled Migration</a></li>
+              <li><a href="construction.html">Australia Employer Sponsored Visas</a></li>
+              <li><a href="construction.html">Australia Family Visas</a></li>
+              <li><a href="construction.html">Australia Student Visas</a></li>
+              <li><a href="construction.html">Australia Subclass 482 Visa</a></li>
+            </ul>
+          </li>
+
+          <!-- 3rd -->
+          <li class="nav-item main" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+            <a href="construction.html" @click.prevent="open = !open">Germany </a>
+            <ul x-show="open" x-transition:enter="submenu-enter" x-transition:leave="submenu-leave" class="submenu">
+              <li><a href="construction.html">Job Seeker Visa</a></li>
+              <li><a href="construction.html">Tourist Visa</a></li>
+            </ul>
+          </li>
+
+          <!-- 4th -->
+          <li class="nav-item main" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+            <a href="construction.html" @click.prevent="open = !open">UK</a>
+            <ul x-show="open" x-transition:enter="submenu-enter" x-transition:leave="submenu-leave" class="submenu">
+              <li><a href="construction.html">Work Visa</a></li>
+              <li><a href="construction.html">Tourist Visa</a></li>
+            </ul>
+          </li>
+          <!-- 5th -->
+          <li class="nav-item main" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+            <a href="construction.html" @click.prevent="open = !open">Gulf Nations </a>
+            <ul x-show="open" x-transition:enter="submenu-enter" x-transition:leave="submenu-leave" class="submenu">
+              <li><a href="construction.html">Canada Permanent Residency Visa</a></li>
+              <li><a href="construction.html">Work Visa</a></li>
+              <li><a href="construction.html">Tourist Visa</a></li>
+
+            </ul>
+          </li>
+          <!-- 6th -->
+          <li class="nav-item main" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+            <a href="construction.html" @click.prevent="open = !open">Tourist Visa </a>
+            <ul x-show="open" x-transition:enter="submenu-enter" x-transition:leave="submenu-leave" class="submenu">
+              <li><a href="construction.html">Canada Tourist Visa</a></li>
+              <li><a href="construction.html">Australia Tourist Visa</a></li>
+              <li><a href="construction.html">USA Tourist Visa</a></li>
+              <li><a href="construction.html">UK Tourist Visa</a></li>
+              <li><a href="construction.html">Germany Tourist Visa</a></li>
+              <li><a href="construction.html">Dubai Tourist Visa</a></li>
+              <li><a href="construction.html">Italy Tourist Visa</a></li>
+              <li><a href="construction.html">Ireland Tourist Visa</a></li>
+            </ul>
+          </li>
+
+          <!-- 7th -->
+          <li class="nav-item main" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+            <a href="construction.html" @click.prevent="open = !open">Study Visa</a>
+            <ul x-show="open" x-transition:enter="submenu-enter" x-transition:leave="submenu-leave" class="submenu">
+              <li><a href="construction.html">Study In Canada</a></li>
+              <li><a href="construction.html">Study In Australia</a></li>
+              <li><a href="construction.html">Study In Germany</a></li>
+
+              <li><a href="construction.html">Study In Italy</a></li>
+              <li><a href="construction.html">Study In Singapore</a></li>
+              <li><a href="construction.html">Study In UK</a></li>
+              <li><a href="construction.html">Study In USA</a></li>
+              <li><a href="construction.html">Study In New Zealand</a></li>
+              <li><a href="construction.html">Study In Dubai</a></li>
+              <li><a href="construction.html">Study In Ireland</a></li>
+            </ul>
+          </li>
+
+          <!-- 8th -->
+          <li class="nav-item main" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+            <a href="construction.html" @click.prevent="open = !open">Work Permit Visa </a>
+            <ul x-show="open" x-transition:enter="submenu-enter" x-transition:leave="submenu-leave" class="submenu">
+              <li><a href="construction.html">Canada Work Visa</a></li>
+              <li><a href="construction.html">Australia Work Visa</a></li>
+              <li><a href="construction.html">Poland Work Visa</a></li>
+              <li><a href="construction.html">UK Work Visa</a></li>
+              <li><a href="construction.html">Portugal Work Visa</a></li>
+              <li><a href="construction.html">Germany Work Visa</a></li>
+              <li><a href="construction.html">Hong Kong Work Visa</a></li>
+              <li><a href="construction.html">Malta Work Visa</a></li>
+              <li><a href="construction.html">New Zealand Work Visa</a></li>
+              <li><a href="construction.html">Sweden Work Visa</a></li>
+              <li><a href="construction.html">Austria Work Visa</a></li>
+            </ul>
+          </li>
+
+          <!-- 9th -->
+          <li class="nav-item main" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+            <a href="construction.html" @click.prevent="open = !open">Permanent Residency Visa </a>
+            <ul x-show="open" x-transition:enter="submenu-enter" x-transition:leave="submenu-leave" class="submenu">
+              <li><a href="construction.html">Canada PR Visa</a></li>
+              <li><a href="construction.html">Australia PR Visa</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Mobile Header  -->
+<header class="w-full grid grid-cols-2 relative bg-white">
+    <div class="p-5 col-span-1">
+        <img src="Assets/logo1.png" class="w-full max-w-44 object-contain" alt="">
+    </div>
+    <div class="off-screen-menu p-5">
+        <img src="Assets/logo1.png" class="w-full max-w-44 object-contain mx-auto" alt="">
+        <ul class="w-full mt-2 open-dropdown">
+          <li class="hover:text-[#F20C1F] py-2"><a href="/about-us">About Us</a></li>
+          <li class="hover:text-[#F20C1F] py-2"><a href="/our-services">Our Services</a></li>
+          <li class="hover:text-[#F20C1F] py-2"><a href="/news">News</a></li>
+          <li class="hover:text-[#F20C1F] py-2"><a href="/coaching">Coaching</a></li>
+          <li class="hover:text-[#F20C1F] py-2"><a href="/blogs">Blogs</a></li>
+          <li class="hover:text-[#F20C1F] py-2"><a href="/contact us">Contact Us</a></li>    
+          <li class="duration-300 transition-all">
+                <div class="flex justify-between">
+                    <a href="construction.html" class="hover:text-[#F20C1F]">Canada</a>
+                    <p class="hamMenuDropdown p-0.5 px-1 rounded-md border-2 border-[#F20C1F] hover:rotate-90 duration-300 cursor-pointer">⮞</p>
+                </div>
+                <ul class="hamDropdownContainer pl-5">
+                  <li><a href="construction.html">Canada Permanent Residency Visa</a></li>
+                  <li><a href="construction.html">Canada Express Entry</a></li>
+                  <li><a href="construction.html">Canada Family Sponsorship</a></li>
+                  <!-- Add other submenu items here -->
+                  <li class="duration-300 transition-all">
+                    <div class="flex justify-between">
+                        <a href="construction.html" class="hover:text-[#F20C1F]">Provincial Nominee Program (PNP)</a>
+                        <p class="hamMenuDropdown p-0.5 px-1 mr-1 rounded-md border-2 border-[#F20C1F] hover:rotate-90 duration-300 cursor-pointer">⮞</p>
+                    </div>
+                    <ul class="hamDropdownContainer pl-5">
+                      <li><a href="construction.html" class="hover:text-[#F20C1F]">Manitoba PNP</a></li>
+                      <li><a href="construction.html" class="hover:text-[#F20C1F]">Yukon Nominee Program</a></li>
+                      <li><a href="construction.html" class="hover:text-[#F20C1F]">Ontario PNP Program</a></li>
+                      <li><a href="construction.html" class="hover:text-[#F20C1F]">Noca Scotia PNP</a></li>
+                      <li><a href="construction.html" class="hover:text-[#F20C1F]">Alberta PNP Program</a></li>
+                      <li><a href="construction.html" class="hover:text-[#F20C1F]">British Columbia PNP Program</a></li>
+                      <li><a href="construction.html" class="hover:text-[#F20C1F]">Quebec Skilled Worker Program</a></li>
+                      <li><a href="construction.html" class="hover:text-[#F20C1F]">Saskatchewan PNP</a></li>
+                      <li><a href="construction.html" class="hover:text-[#F20C1F]">New Brunswick PNP Program</a></li>
+                      <li><a href="construction.html" class="hover:text-[#F20C1F]">Atlantic Immigration Program</a></li>
+                      <li><a href="construction.html" class="hover:text-[#F20C1F]">PEI PNP Program</a></li>
+                      <li><a href="construction.html" class="hover:text-[#F20C1F]">NL PNP Program</a></li>
+                      <!-- Add other PNP submenu items here -->
+                    </ul>
+                  </li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Atlantic Immigration Pilot</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Canada Business Visa</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Self-employed Persons Program</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Caregivers</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Rural and Northern Immigration Pilot</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Canada Agri-Food Pilot</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Canada Refugees and Asylum</a></li>
+                </ul>
+              </li>
+              <!-- 2nd -->
+             <!-- Add other submenu items here -->
+                <li class="duration-300 transition-all">
+                <div class="flex justify-between">
+                    <a href="construction.html" class="hover:text-[#F20C1F]">Australia</a>
+                    <p class="hamMenuDropdown p-0.5 px-1 rounded-md border-2 border-[#F20C1F] hover:rotate-90 duration-300 cursor-pointer">⮞</p>
+                </div>
+                <ul class="hamDropdownContainer pl-5">
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Australia Permanent Residency Visa</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Australia Skilled Migration</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Australia Employer Sponsored Visas</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Australia Family Visas</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Australia Student Visas</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Australia Subclass 482 Visa</a></li>
+                </ul>
+              </li>
+    
+              <!-- 3rd -->
+              <li class="duration-300 transition-all">
+                <div class="flex justify-between">
+                    <a href="construction.html" class="hover:text-[#F20C1F]">Germany</a>
+                    <p class="hamMenuDropdown p-0.5 px-1 rounded-md border-2 border-[#F20C1F] hover:rotate-90 duration-300 cursor-pointer">⮞</p>
+                </div>
+                <ul class="hamDropdownContainer pl-5">
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Job Seeker Visa</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Tourist Visa</a></li>
+                </ul>
+              </li>
+    
+              <!-- 4th -->
+              <li class="duration-300 transition-all">
+                <div class="flex justify-between">
+                    <a href="construction.html" class="hover:text-[#F20C1F]">UK</a>
+                    <p class="hamMenuDropdown p-0.5 px-1 rounded-md border-2 border-[#F20C1F] hover:rotate-90 duration-300 cursor-pointer">⮞</p>
+                </div>
+                <ul class="hamDropdownContainer pl-5">
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Work Visa</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Tourist Visa</a></li>
+                </ul>
+              </li>
+              <!-- 5th -->
+              <li class="duration-300 transition-all">
+                <div class="flex justify-between">
+                    <a href="construction.html" class="hover:text-[#F20C1F]">Gulf Nations</a>
+                    <p class="hamMenuDropdown p-0.5 px-1 rounded-md border-2 border-[#F20C1F] hover:rotate-90 duration-300 cursor-pointer">⮞</p>
+                </div>
+                <ul class="hamDropdownContainer pl-5">
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Canada Permanent Residency Visa</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Work Visa</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Tourist Visa</a></li>
+    
+                </ul>
+              </li>
+              <!-- 6th -->
+              <li class="duration-300 transition-all">
+                <div class="flex justify-between">
+                    <a href="construction.html" class="hover:text-[#F20C1F]">Tourist Visa</a>
+                    <p class="hamMenuDropdown p-0.5 px-1 rounded-md border-2 border-[#F20C1F] hover:rotate-90 duration-300 cursor-pointer">⮞</p>
+                </div>
+                <ul class="hamDropdownContainer pl-5">
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Canada Tourist Visa</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Australia Tourist Visa</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">USA Tourist Visa</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">UK Tourist Visa</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Germany Tourist Visa</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Dubai Tourist Visa</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Italy Tourist Visa</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Ireland Tourist Visa</a></li>
+                </ul>
+              </li>
+    
+              <!-- 7th -->
+              <li class="duration-300 transition-all">
+                <div class="flex justify-between">
+                    <a href="construction.html" class="hover:text-[#F20C1F]">Study Visa</a>
+                    <p class="hamMenuDropdown p-0.5 px-1 rounded-md border-2 border-[#F20C1F] hover:rotate-90 duration-300 cursor-pointer">⮞</p>
+                </div>
+                <ul class="hamDropdownContainer pl-5">
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Study In Canada</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Study In Australia</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Study In Germany</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Study In Italy</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Study In Singapore</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Study In UK</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Study In USA</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Study In New Zealand</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Study In Dubai</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Study In Ireland</a></li>
+                </ul>
+              </li>
+    
+              <!-- 8th -->
+              <li class="duration-300 transition-all">
+                <div class="flex justify-between">
+                    <a href="construction.html" class="hover:text-[#F20C1F]">Work Permit Visa</a>
+                    <p class="hamMenuDropdown p-0.5 px-1 rounded-md border-2 border-[#F20C1F] hover:rotate-90 duration-300 cursor-pointer">⮞</p>
+                </div>
+                <ul class="hamDropdownContainer pl-5">
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Canada Work Visa</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Australia Work Visa</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Poland Work Visa</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">UK Work Visa</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Portugal Work Visa</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Germany Work Visa</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Hong Kong Work Visa</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Malta Work Visa</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">New Zealand Work Visa</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Sweden Work Visa</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Austria Work Visa</a></li>
+                </ul>
+              </li>
+    
+              <!-- 9th -->
+              <li class="duration-300 transition-all">
+                <div class="flex justify-between">
+                    <a href="construction.html" class="hover:text-[#F20C1F]">Permanent Residency Visa</a>
+                    <p class="hamMenuDropdown p-0.5 px-1 rounded-md border-2 border-[#F20C1F] hover:rotate-90 duration-300 cursor-pointer">⮞</p>
+                </div>
+                <ul class="hamDropdownContainer pl-5">
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Canada PR Visa</a></li>
+                  <li><a href="construction.html" class="hover:text-[#F20C1F]">Australia PR Visa</a></li>
+                </ul>
+              </li>
+        </ul>
+      </div>
+    <nav>
+        <div class="ham-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+</header>
+
+
+
+    
+
+  
+  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="swiper.js"></script>
+  <script src="index.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const hamMenu = document.querySelector(".ham-menu");
+      const dropdowns = document.querySelectorAll(".hamMenuDropdown");
+      const offScreenMenu = document.querySelector(".off-screen-menu");
+  
+      hamMenu.addEventListener("click", () => {
+        hamMenu.classList.toggle("active");
+        offScreenMenu.classList.toggle("active");
+      });
+  
+      dropdowns.forEach(dropdown => {
+        dropdown.addEventListener("click", (e) => {
+          e.stopPropagation(); // Prevent event from bubbling up to parent dropdowns
+          const parent = e.target.closest("li");
+          const dropdownContainer = parent.querySelector(".hamDropdownContainer");
+  
+          // Toggle the current dropdown
+          dropdownContainer.classList.toggle("open-dropdown");
+  
+          // If the current dropdown is open, ensure all ancestor dropdowns remain open
+          if (dropdownContainer.classList.contains("open-dropdown")) {
+            let ancestor = parent.parentElement.closest("li");
+            while (ancestor) {
+              ancestor.querySelector(".hamDropdownContainer").classList.add("open-dropdown");
+              ancestor = ancestor.parentElement.closest("li");
+            }
+          } else {
+            // Close all nested dropdowns
+            parent.querySelectorAll(".hamDropdownContainer").forEach(container => {
+              container.classList.remove("open-dropdown");
+            });
+          }
+        });
+      });
+    });
+  </script>
+  
+</body>
+
+</html>

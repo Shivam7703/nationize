@@ -1,0 +1,86 @@
+/* off-screen-menu */
+.off-screen-menu {
+  background-color: white;
+  height: 100vh;
+  overflow-y: auto;
+  width: 100%;
+  max-width: 450px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;    
+    justify-content: center; */
+  text-align: left;
+  font-size: 1rem;
+  transition: 0.3s ease;
+
+  li {
+    padding: 0.5rem 0;
+    cursor: pointer;
+  }
+}
+.off-screen-menu.active {
+  right: 0;
+}
+
+/* nav */
+nav {
+  padding: 1rem;
+  display: flex;
+}
+
+/* ham menu */
+.ham-menu {
+  height: 50px;
+  width: 30px;
+  margin-left: auto;
+  position: relative;
+
+  a:hover {
+    color: #f20c1f;
+  }
+}
+.ham-menu span {
+  height: 5px;
+  width: 100%;
+  background-color: #f20c1f;
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease;
+}
+.ham-menu span:nth-child(1) {
+  top: 25%;
+}
+.ham-menu span:nth-child(3) {
+  top: 75%;
+}
+.ham-menu.active span {
+  background-color: #f20c1f;
+}
+.ham-menu.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.hamDropdownContainer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.open-dropdown {
+  max-height: 1000px; /* Set this to a large enough value to fit your dropdown content */
+  transition: max-height 0.3s ease-in-out;
+}
