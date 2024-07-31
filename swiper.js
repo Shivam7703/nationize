@@ -35,6 +35,10 @@ const swiper2 = new Swiper('.swiper2', {
         spaceBetween: 30
       }
     },
+    navigation: {
+      nextEl: '#slide-prev2',
+      prevEl: '#slide-next2',
+  },
 });
 const swiper3 = new Swiper('.swiper3', {
     // Optional parameters
@@ -64,8 +68,8 @@ const swiper3 = new Swiper('.swiper3', {
     // },
 
     navigation: {
-        nextEl: '#slide-prev2',
-        prevEl: '#slide-next2',
+        nextEl: '#slide-prev3',
+        prevEl: '#slide-next3',
     },
 
     // scrollbar: {
@@ -100,8 +104,8 @@ const swiper4 = new Swiper('.swiper4', {
   //     el: '.swiper-pagination',
   // },
   navigation: {
-      nextEl: '#slide-prev3',
-      prevEl: '#slide-next3',
+      nextEl: '#slide-prev4',
+      prevEl: '#slide-next4',
   },
   // scrollbar: {
   //     el: '.swiper-scrollbar',
